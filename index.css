@@ -1,0 +1,86 @@
+.newsletter {
+  padding: 6rem 2rem;
+  text-align: center;
+  background: url(../image/letter-bg.png) no-repeat;
+  background-size: cover;
+}
+
+.newsletter h3 {
+  color: var(--black)
+  font-size: 3rem;
+}
+
+.newsletter p {
+  color:var(--light-color);
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.newsletter form {
+  margin: 1rem auto;
+  max-width: 60rem;
+  height: 5rem;
+  display: flex;
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+  border-radius: 5rem;
+}
+
+.newsletter form input[type='email'] {
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+  color: var(--black);
+  text-transform: none;
+  padding: 0 2rem;
+}
+
+.newsletter form input[type='submit'] {
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+  color: var(--black);
+  background: var(--light-yellow);
+  cursor: pointer;
+}
+
+.newsletter form input[type='submit']:hover{
+  background: var(--yellow);
+}
+
+.reviews .reviews-slider{
+  padding-bottom: 3rem;
+}
+
+.reviews .reviews-slider .box{
+  padding: 2rem;
+  margin: 2rem 0;
+  text-align: center;
+  /* opacity: .4;
+  transform: scale(.9) */
+}
+
+.reviews .reviews-slider .box img{
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.reviews .reviews-slider .box .content p{
+  font-size: 1.4rem;
+  color: var(--light-color);
+  padding: 1rem 0;
+}
+
+.reviews .reviews-slider .box .content h3{
+  font-size: 2.2rem;
+  color: var(--black);
+
+}
+
+.reviews .reviews-slider .box .content .stars i{
+  font-size: 1.7rem;
+  color: var(--yellow);
+  
+}
