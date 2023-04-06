@@ -6,12 +6,12 @@
 }
 
 .newsletter h3 {
-  color: var(--black)
+  color: var(--black);
   font-size: 3rem;
 }
 
 .newsletter p {
-  color:var(--light-color);
+  color: var(--light-color);
   font-size: 1.5rem;
   padding: 1rem 0;
 }
@@ -26,7 +26,7 @@
   border-radius: 5rem;
 }
 
-.newsletter form input[type='email'] {
+.newsletter form input[type="email"] {
   height: 100%;
   width: 100%;
   font-size: 1.6rem;
@@ -35,7 +35,7 @@
   padding: 0 2rem;
 }
 
-.newsletter form input[type='submit'] {
+.newsletter form input[type="submit"] {
   height: 100%;
   width: 100%;
   font-size: 1.6rem;
@@ -44,15 +44,15 @@
   cursor: pointer;
 }
 
-.newsletter form input[type='submit']:hover{
+.newsletter form input[type="submit"]:hover {
   background: var(--yellow);
 }
 
-.reviews .reviews-slider{
+.reviews .reviews-slider {
   padding-bottom: 3rem;
 }
 
-.reviews .reviews-slider .box{
+.reviews .reviews-slider .box {
   padding: 2rem;
   margin: 2rem 0;
   text-align: center;
@@ -60,27 +60,25 @@
   transform: scale(.9) */
 }
 
-.reviews .reviews-slider .box img{
+.reviews .reviews-slider .box img {
   height: 7rem;
   width: 7rem;
   border-radius: 50%;
   margin-bottom: 1rem;
 }
 
-.reviews .reviews-slider .box .content p{
+.reviews .reviews-slider .box .content p {
   font-size: 1.4rem;
   color: var(--light-color);
   padding: 1rem 0;
 }
 
-.reviews .reviews-slider .box .content h3{
+.reviews .reviews-slider .box .content h3 {
   font-size: 2.2rem;
   color: var(--black);
-
 }
 
-.reviews .reviews-slider .box .content .stars i{
+.reviews .reviews-slider .box .content .stars i {
   font-size: 1.7rem;
   color: var(--yellow);
-  
 }
