@@ -237,7 +237,7 @@ section {
 }
 
 .icons-container .icons .content h3{
-   /* color: var(--yellow);*/
+    color: var(--yellow);
     font-size: 2.5rem;
 }
 .icons-container .icons .content p{
