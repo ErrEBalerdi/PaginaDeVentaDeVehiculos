@@ -1,7 +1,11 @@
-:root{
+/* variables */
+
+:root {
   --black: #130f40;
-  border: .1rem solid rgba(0, 0, 0, .1);
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
 }
+/* style-contact */
+
 .contact .row {
   display: flex;
   flex-wrap: wrap;
@@ -44,4 +48,46 @@
 .contact .row form textarea {
   height: 15rem;
   resize: none;
+}
+
+/* style-footer */
+
+.footer {
+  background: var(--light-yellow);
+}
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+  color: var(--black);
+  font-size: 2.2rem;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a {
+  color: var(--light-color);
+  font-size: 1.4rem;
+  display: block;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a i {
+  padding-right: 0.5rem;
+  color: var(--black);
+}
+
+.footer .box-container .box a:hover i {
+  padding-right: 2rem;
+}
+
+.footer .credit {
+  text-align: center;
+  border-top: var(--border);
+  padding: 1rem;
+  padding-top: 2.5rem;
+  margin-top: 2rem;
+  font-size: 2rem;
 }
