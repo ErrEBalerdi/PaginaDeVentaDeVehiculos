@@ -1,14 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <script type="text/javascript" src="index.js"></script>
     <title>Proyecto Final</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    
+    <!--Inicio del header-->
+    <header class="header">
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"> <span>luxury</span>Cars</a>
+
+        <nav class="navbar">
+            <a href="#home">inicio</a>
+            <a href="#home">vehiculos</a>
+            <a href="#home">servicios</a>
+            <a href="#home">patrocinios</a>
+            <a href="#home">reviews</a>
+            <a href="#home">contacto</a>
+        </nav>
+
+        <div id="login-btn">
+            <button class="btn">Login</button>
+            <i class="far fa-user"></i>
+        </div>
+
+    </header>
+    <!--fin del header-->
+
+    <!--Incio del login-->
+    <div class="login-form-container">
+
+        <span class="fas fa-times" id="close-login-form"></span>
+
+        <form action="">
+            <h3>inicio de sesion</h3>
+            <input type="email" placeholder="email" class="box">
+            <input type="password" placeholder="password" class="box">
+            <p>olvidaste tu contraseña <a href="#">hace click aca</a> </p>
+            <input type="submit" value="login now" class="btn">
+            <p>iniciar sesion con</p>
+            <div class="buttons">
+                <a href="#" class="btn">google</a>
+                <a href="#" class="btn">facebook</a>
+            </div>
+            <p>no tenes cuenta? <a href="#">crear cuenta</a></p>
+        </form>
+    </div>
+    <!--Fin del login-->
+
+    <!--incio del home-->
+    <section class="home" id="home">
+        <h1 class="home-parallax">encontra tu vehiculo</h1>
+        <img class="home-parallax" src="https://i.gyazo.com/757ea9d4577b8eec07fae5b4f39622e1.jpg" alt="auto">
+        <a href="" class="btn home-parallax">explorar vehiculos</a>
+    </section>
+    <!--Fin del home-->
+
+    <!--Seccion de iconos-->
+
+    <section class="icons-container">
+        <div class="icons">
+            <i class="fas fa-home"></i>
+            <div class="content">
+                <h3>20+</h3>
+                <p>sucursales</p>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="fas fa-car"></i>
+            <div class="content">
+                <h3>900+</h3>
+                <p>autos vendidos</p>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="fas fa-users"></i>
+            <div class="content">
+                <h3>200+</h3>
+                <p>clientes contentos</p>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="fas fa-car"></i>
+            <div class="content">
+                <h3>100+</h3>
+                <p>autos nuevos</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Fin de seccion de iconos-->
+
+
+
+
+    <script src="./index.js"></script>
 </body>
+
 </html>
