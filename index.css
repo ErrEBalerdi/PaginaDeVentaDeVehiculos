@@ -28,6 +28,10 @@ html {
     scroll-behavior: smooth;
 }
 
+section {
+    padding: 2rem 9%;
+}
+
 .btn {
     display: inline-block;
     margin-top: 1rem;
@@ -88,13 +92,171 @@ html {
     display: none;
 }
 
-#menu-btn{
+#menu-btn {
     font-size: 2.5rem;
     color: var(--light-color);
     cursor: pointer;
     display: none;
 }
 
+.header.active {
+    box-shadow: var(--box-shadow);
+    padding: 2rem 9%;
+}
+
+/* Inicio de estilos solo del form y elementos*/
+.login-form-container {
+    position: fixed;
+    top: -105%;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, .9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.login-form-container form {
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    background: #fff;
+    border: var(--border);
+    text-align: center;
+    width: 40rem;
+}
+
+.login-form-container.active {
+    top: 0;
+    opacity: 1;
+
+}
+
+.login-form-container form .buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.login-form-container form .btn {
+    display: block;
+    width: 100%;
+    margin: .5rem 0;
+}
+
+.login-form-container form h3 {
+    color: var(--black);
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.login-form-container form .box {
+    margin: .7rem 0;
+    width: 100%;
+    text-transform: none;
+    color: var(--black);
+    font-size: 1.6rem;
+    padding: 1rem 1.2rem;
+    border: var(--border);
+    border-radius: .5rem;
+}
+
+.login-form-container form p {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+
+.login-form-container form p a {
+    color: var(--yellow);
+    text-decoration: underline;
+}
+
+.login-form-container #close-login-form {
+    position: absolute;
+    top: 1rem;
+    right: 2.5rem;
+    font-size: 5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+/* fin de estilos solo del form y elementos*/
+
+/* Inicio del home */
+.home {
+    padding-top: 10rem;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.home h1 {
+    font-size: 7.5vw;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.home img {
+    width: 100%;
+    margin: 1rem 0;
+}
+/* Fin del home */
+
+/*Iconos*/
+.icons-container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    background: #eee;
+}
+.icons-container .icons{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    border-radius: 5rem;
+}
+
+.icons-container .icons i{
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    background: #eee;
+    color: var(--black);
+    text-align: center;
+}
+
+.icons-container .icons .content h3{
+   /* color: var(--yellow);*/
+    font-size: 2.5rem;
+}
+.icons-container .icons .content p{
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
+.icons-container .icons:hover{
+    background: var(--black);
+}
+.icons-container .icons:hover i{
+    background: var(--yellow);
+}
+.icons-container .icons:hover .content h3{
+    color: #fff;
+}
+.icons-container .icons:hover .content p{
+    color: #eee;
+}
+/*Iconos*/
 
 /* Parte Responsive*/
 @media(max-width:991px) {
@@ -107,33 +269,47 @@ html {
     padding: 2rem;
 }
 
+.header.active {
+    padding: 2rem;
+}
+
+
+section {
+    padding: 2rem;
+}
+
 @media(max-width:768px) {
-    #menu-btn{
+    #menu-btn {
         display: block;
     }
 
-    #menu-btn.fa-times{
+    #menu-btn.fa-times {
         transform: rotate(188deg);
     }
 
-    .header #login-btn i{
+    .header #login-btn i {
         display: block;
     }
-    .header #login-btn .btn{
+
+    .header #login-btn .btn {
         display: none;
     }
-    .header .navbar{
+
+    .header .navbar {
         position: absolute;
-        top: 99%; left: 0; right:0;
+        top: 99%;
+        left: 0;
+        right: 0;
         background: #fff;
         border-top: var(--border);
-        clip-path:polygon(0 0, 100% 0, 100% 0, 0 0);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
-    .header .navbar.active{
+    .header .navbar.active {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
-    .header .navbar a{
+
+    .header .navbar a {
         display: block;
         margin: 2rem;
         font-size: 2rem;
@@ -145,5 +321,4 @@ html {
         font-size: 50%;
     }
 }
-
 /*Parte Responsive */
