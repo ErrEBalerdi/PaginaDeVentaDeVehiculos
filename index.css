@@ -1,3 +1,7 @@
+:root{
+  --black: #130f40;
+  border: .1rem solid rgba(0, 0, 0, .1);
+}
 .contact .row {
   display: flex;
   flex-wrap: wrap;
