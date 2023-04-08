@@ -56,8 +56,8 @@
   padding: 2rem;
   margin: 2rem 0;
   text-align: center;
-  /* opacity: .4;
-  transform: scale(.9) */
+  opacity: 0.4;
+  transform: scale(0.9);
 }
 
 .reviews .reviews-slider .box img {
