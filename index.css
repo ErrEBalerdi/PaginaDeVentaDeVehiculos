@@ -351,8 +351,8 @@ section {
     padding: 0 .5rem;
 }
 
-.swiper-pagination-bullet-active {
-    background: var(--yellow);
+.swiper-pagination-bullet{
+    display: none;
 }
 
 
