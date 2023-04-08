@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Luxury Cars - Concencionario de Autos</title>
+
+=======
+    <title>Proyecto Final</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -16,16 +22,15 @@
     <!--Inicio del header-->
     <header class="header">
       <div id="menu-btn" class="fas fa-bars"></div>
-
-      <a href="#" class="logo"> <span>Luxury</span>Cars</a>
+      <a href="#" class="logo"> <span>luxury</span>Cars</a>
 
       <nav class="navbar">
-        <a href="#home">Inicio</a>
-        <a href="#home">Vehiculos</a>
-        <a href="#home">Servicios</a>
-        <a href="#home">Patrocinios</a>
-        <a href="#home">Reviews</a>
-        <a href="#home">Contacto</a>
+        <a href="#home">inicio</a>
+        <a href="#home">vehiculos</a>
+        <a href="#home">servicios</a>
+        <a href="#home">patrocinios</a>
+        <a href="#home">reviews</a>
+        <a href="#home">contacto</a>
       </nav>
 
       <div id="login-btn">
@@ -33,168 +38,184 @@
         <i class="far fa-user"></i>
       </div>
     </header>
+
     <!--fin del header-->
 
-    <!--Incio del login-->
+    <!--Inicio del login-->
     <div class="login-form-container">
       <span class="fas fa-times" id="close-login-form"></span>
-
       <form action="">
-        <h3>Inicio de Sesion</h3>
+        <h3>inicio de sesion</h3>
         <input type="email" placeholder="email" class="box" />
         <input type="password" placeholder="password" class="box" />
-        <input type="submit" value="Login" class="btn" />
+        <p>olvidaste tu contraseña <a href="#">hace click aca</a></p>
+        <input type="submit" value="login now" class="btn" />
+        <p>iniciar sesion con</p>
+        <div class="buttons">
+          <a href="#" class="btn">google</a>
+          <a href="#" class="btn">facebook</a>
+        </div>
+        <p>no tenes cuenta? <a href="#">crear cuenta</a></p>
       </form>
     </div>
     <!--Fin del login-->
 
-    <!--incio del home-->
+    <!--inicio del home-->
     <section class="home" id="home">
-      <h1 class="home-parallax">Encontra tu vehiculo</h1>
+      <h1 class="home-parallax">encontra tu vehiculo</h1>
       <img
         class="home-parallax"
         src="https://i.gyazo.com/757ea9d4577b8eec07fae5b4f39622e1.jpg"
         alt="auto"
       />
-      <a href="" class="btn home-parallax">Explorar Vehiculos</a>
+      <a href="" class="btn home-parallax">explorar vehiculos</a>
     </section>
     <!--Fin del home-->
 
     <!--Seccion de iconos-->
-
     <section class="icons-container">
       <div class="icons">
         <i class="fas fa-home"></i>
         <div class="content">
           <h3>20+</h3>
-          <p>Sucursales</p>
+          <p>sucursales</p>
         </div>
       </div>
       <div class="icons">
         <i class="fas fa-car"></i>
         <div class="content">
           <h3>900+</h3>
-          <p>Autos Vendidos</p>
+          <p>autos vendidos</p>
         </div>
       </div>
       <div class="icons">
         <i class="fas fa-users"></i>
         <div class="content">
           <h3>200+</h3>
-          <p>Clientes Contentos</p>
+          <p>clientes contentos</p>
         </div>
       </div>
       <div class="icons">
         <i class="fas fa-car"></i>
         <div class="content">
           <h3>100+</h3>
-          <p>Autos Nuevos</p>
+          <p>autos nuevos</p>
         </div>
       </div>
     </section>
-
     <!--Fin de seccion de iconos-->
 
     <!-- vehicles section starts -->
-
     <section class="vehicles" id="vehicles">
-      <h1 class="heading">Vehiculos<span> Populares</span></h1>
-
-      <div class="vehicles-slider">
-        <div class="wrapper">
-          <div class="box">
-            <img src="imagen vehicle 1" alt="" />
+      <h1 class="heading">Vehiculos <span>Populares</span></h1>
+      <div class="swiper vehicles-slider">
+        <div class="swiper-wrapper wrapper">
+          <div class="swiper-slide box">
+            <img
+              src="https://i.gyazo.com/929360b41b8185f4ec029a639b34a3df.png"
+              alt=""
+            />
             <div class="content">
-              <h3>Modelo Nuevo</h3>
-              <div class="price"><span>Precio: </span> $65000/-</div>
+              <h3>Volkswagen Golf GTI</h3>
+              <div class="price"><span>precio: </span> $43000/-</div>
               <p>
-                Nuevo
-                <span class="fas fa-circle"></span> 2021
-                <span class="fas fa-circle"></span> Automatico
-                <span class="fas fa-circle"></span> Gasolina
-                <span class="fas fa-circle"></span> 183mph
+                0km
+                <span class="fas fa-circle"></span> 2022
+                <span class="fas fa-circle"></span> automatico
+                <span class="fas fa-circle"></span> combustible
+                <span class="fas fa-circle"></span> 250km/h
               </p>
-              <a href="#" class="btn">Ver Más</a>
+              <a href="#" class="btn">Comprar</a>
             </div>
           </div>
-
-          <div class="box">
-            <img src="imagen vehicle 2" alt="" />
+          <div class="swiper-slide box">
+            <img
+              src="https://i.gyazo.com/8b75e19466628b77c42b2275fe17c94b.png"
+              alt=""
+            />
             <div class="content">
-              <h3>Modelo Nuevo</h3>
-              <div class="price"><span>Precio: </span> $65000/-</div>
+              <h3>Ford Raptor</h3>
+              <div class="price"><span>precio: </span> $105000/-</div>
               <p>
-                Nuevo
-                <span class="fas fa-circle"></span> 2021
-                <span class="fas fa-circle"></span> Automatico
-                <span class="fas fa-circle"></span> Gasolina
-                <span class="fas fa-circle"></span> 183mph
+                0km
+                <span class="fas fa-circle"></span> 2023
+                <span class="fas fa-circle"></span> automatico
+                <span class="fas fa-circle"></span> combustible
+                <span class="fas fa-circle"></span> 180km/h
               </p>
-              <a href="#" class="btn">Ver Más</a>
+              <a href="#" class="btn">Comprar</a>
             </div>
           </div>
-
-          <div class="box">
-            <img src="imgagen vehicle 3" alt="" />
+          <div class="swiper-slide box">
+            <img
+              src="https://i.gyazo.com/20a28c1db250d54ee8ec15faae3d40d8.png"
+              alt=""
+            />
             <div class="content">
-              <h3>Modelo Nuevo</h3>
-              <div class="price"><span>Precio: </span> $65000/-</div>
+              <h3>Dodge Ram</h3>
+              <div class="price"><span>precio: </span> $39000/-</div>
               <p>
-                Nuevo
-                <span class="fas fa-circle"></span> 2021
-                <span class="fas fa-circle"></span> Automatico
-                <span class="fas fa-circle"></span> Gasolina
-                <span class="fas fa-circle"></span> 183mph
+                0km
+                <span class="fas fa-circle"></span> 2023
+                <span class="fas fa-circle"></span> automatico
+                <span class="fas fa-circle"></span> combustible
+                <span class="fas fa-circle"></span> 180km/h
               </p>
-              <a href="#" class="btn">Ver Más</a>
+              <a href="#" class="btn">Comprar</a>
             </div>
           </div>
-
-          <div class="box">
-            <img src="imagen vehicle 4" alt="" />
+          <div class="swiper-slide box">
+            <img
+              src="https://i.gyazo.com/9cf30f45253d602b0af0031a444bf38f.png"
+              alt=""
+            />
             <div class="content">
-              <h3>Modelo Nuevo</h3>
-              <div class="price"><span>Precio: </span> $65000/-</div>
+              <h3>Mercedes Benz AMG GTR</h3>
+              <div class="price"><span>precio: </span> $200000/-</div>
               <p>
-                Nuevo
-                <span class="fas fa-circle"></span> 2021
-                <span class="fas fa-circle"></span> Automatico
-                <span class="fas fa-circle"></span> Gasolina
-                <span class="fas fa-circle"></span> 183mph
+                0km
+                <span class="fas fa-circle"></span> 2023
+                <span class="fas fa-circle"></span> automatico
+                <span class="fas fa-circle"></span> combustible
+                <span class="fas fa-circle"></span> 250km/h
               </p>
-              <a href="#" class="btn">Ver Más</a>
+              <a href="#" class="btn">Comprar</a>
             </div>
           </div>
-
-          <div class="box">
-            <img src="imagen vehicle 5" alt="" />
+          <div class="swiper-slide box">
+            <img
+              src="https://i.gyazo.com/e956fe2176eea0f45e55b646b7feb09c.png"
+              alt=""
+            />
             <div class="content">
-              <h3>Modelo Nuevo</h3>
-              <div class="price"><span>Precio: </span> $65000/-</div>
+              <h3>Bugatti Chiron</h3>
+              <div class="price"><span>precio: </span> $10M/-</div>
               <p>
-                Nuevo
-                <span class="fas fa-circle"></span> 2021
-                <span class="fas fa-circle"></span> Automatico
-                <span class="fas fa-circle"></span> Gasolina
-                <span class="fas fa-circle"></span> 183mph
+                0km
+                <span class="fas fa-circle"></span> 2023
+                <span class="fas fa-circle"></span> automatico
+                <span class="fas fa-circle"></span> combustible
+                <span class="fas fa-circle"></span> 480km/h
               </p>
-              <a href="#" class="btn">Ver Más</a>
+              <a href="#" class="btn">Comprar</a>
             </div>
           </div>
-
-          <div class="box">
-            <img src="imagen vehicle 6" alt="" />
+          <div class="swiper-slide box">
+            <img
+              src="https://i.gyazo.com/a9b1e24ae99f3156c4c6d8619e5583b9.png"
+              alt=""
+            />
             <div class="content">
-              <h3>Modelo Nuevo</h3>
-              <div class="price"><span>Precio: </span> $65000/-</div>
+              <h3>Nissan GTR Nismo</h3>
+              <div class="price"><span>precio: </span> $117000/-</div>
               <p>
-                Nuevo
-                <span class="fas fa-circle"></span> 2021
-                <span class="fas fa-circle"></span> Automatico
-                <span class="fas fa-circle"></span> Gasolina
-                <span class="fas fa-circle"></span> 183mph
+                0km
+                <span class="fas fa-circle"></span> 2022
+                <span class="fas fa-circle"></span> automatico
+                <span class="fas fa-circle"></span> combustible
+                <span class="fas fa-circle"></span> 315km/h
               </p>
-              <a href="#" class="btn">Ver Más</a>
+              <a href="#" class="btn">Comprar</a>
             </div>
           </div>
         </div>
@@ -203,70 +224,84 @@
     </section>
 
     <!--vehicles section ends-->
- <!--services section starts Riki-->
 
-<section class="services" id="services">
+    <section class="services" id="services">
+      <h1 class="heading">our <span>services</span></h1>
 
-    <h1 class="heading"> our <span>services</span></h1>
-    
-    <div class="box-container">
-      <div class="box">
-        <i class="fas fa-car"></i>
-        <h3>car selling</h3>
-        <p> lorem ipsum dolor sit, amet consectetur adipísicing elit. Hic, earum?</p>
-        <a href="#" class="btn">read more</a>
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-car"></i>
+          <h3>car selling</h3>
+          <p>
+            lorem ipsum dolor sit, amet consectetur adipísicing elit. Hic,
+            earum?
+          </p>
+          <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-tools"></i>
+          <h3>parts repair</h3>
+          <p>
+            lorem ipsum dolor sit, amet consectetur adipísicing elit. Hic,
+            earum?
+          </p>
+          <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-car-crash"></i>
+          <h3>car insurance</h3>
+          <p>
+            lorem ipsum dolor sit, amet consectetur adipísicing elit. Hic,
+            earum?
+          </p>
+          <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-car-battery"></i>
+          <h3>baterry replacement</h3>
+          <p>
+            lorem ipsum dolor sit, amet consectetur adipísicing elit. Hic,
+            earum?
+          </p>
+          <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-gas-pump"></i>
+          <h3>oil change</h3>
+          <p>
+            lorem ipsum dolor sit, amet consectetur adipísicing elit. Hic,
+            earum?
+          </p>
+          <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-headset"></i>
+          <h3>24/7 support</h3>
+          <p>
+            lorem ipsum dolor sit, amet consectetur adipísicing elit. Hic,
+            earum?
+          </p>
+          <a href="#" class="btn">read more</a>
+        </div>
       </div>
-    
-      <div class="box">
-        <i class="fas fa-tools"></i>
-        <h3>parts repair</h3>
-        <p> lorem ipsum dolor sit, amet consectetur adipísicing elit. Hic, earum?</p>
-        <a href="#" class="btn">read more</a>
-      </div>
-    
-      <div class="box">
-        <i class="fas fa-car-crash"></i>
-        <h3>car insurance</h3>
-        <p> lorem ipsum dolor sit, amet consectetur adipísicing elit. Hic, earum?</p>
-        <a href="#" class="btn">read more</a>
-      </div>
-    
-      <div class="box">
-        <i class="fas fa-car-battery"></i>
-        <h3>baterry replacement</h3>
-        <p> lorem ipsum dolor sit, amet consectetur adipísicing elit. Hic, earum?</p>
-        <a href="#" class="btn">read more</a>
-      </div>
-    
-      <div class="box">
-        <i class="fas fa-gas-pump"></i>
-        <h3>oil change</h3>
-        <p> lorem ipsum dolor sit, amet consectetur adipísicing elit. Hic, earum?</p>
-        <a href="#" class="btn">read more</a>
-      </div>
-    
-      <div class="box">
-        <i class="fas fa-headset"></i>
-        <h3>24/7 support</h3>
-        <p> lorem ipsum dolor sit, amet consectetur adipísicing elit. Hic, earum?</p>
-        <a href="#" class="btn">read more</a>
-      </div>
-    
-    </div>
-    
     </section>
-    
+
     <!--services section ends-->
-    
+
     <!--featured section starts  -->
-    <section class ="featured" id = "featured">
-      <h1 class = "heading"><span>featured</span>cars</h1>
-    
+    <section class="featured" id="featured">
+      <h1 class="heading"><span>featured</span>cars</h1>
+
       <div class="swiper featured-slider">
         <div class="swiper-wrapper">
-    
           <div class="swiper-slide box">
-            <img src="" alt=""> <!--1.02.08 (1)-->
+            <img src="" alt="" />
+            <!--1.02.08 (1)-->
             <h3>new model</h3>
             <div class="stars">
               <i class="fas fa-star"></i>
@@ -278,9 +313,10 @@
             <div class="price">$55,000/-</div>
             <a href="#" class="btn">check out</a>
           </div>
-    
+
           <div class="swiper-slide box">
-            <img src="" alt=""> <!--1.02.08 (2)-->
+            <img src="" alt="" />
+            <!--1.02.08 (2)-->
             <h3>new model</h3>
             <div class="stars">
               <i class="fas fa-star"></i>
@@ -292,9 +328,10 @@
             <div class="price">$55,000/-</div>
             <a href="#" class="btn">check out</a>
           </div>
-    
+
           <div class="swiper-slide box">
-            <img src="" alt=""> <!--1.02.08 (3)-->
+            <img src="" alt="" />
+            <!--1.02.08 (3)-->
             <h3>new model</h3>
             <div class="stars">
               <i class="fas fa-star"></i>
@@ -306,9 +343,10 @@
             <div class="price">$55,000/-</div>
             <a href="#" class="btn">check out</a>
           </div>
-    
+
           <div class="swiper-slide box">
-            <img src="" alt=""> <!--1.02.08 (4)-->
+            <img src="" alt="" />
+            <!--1.02.08 (4)-->
             <h3>new model</h3>
             <div class="stars">
               <i class="fas fa-star"></i>
@@ -320,16 +358,15 @@
             <div class="price">$55,000/-</div>
             <a href="#" class="btn">check out</a>
           </div>
-          
         </div>
         <div class="swiper-pagination"></div>
       </div>
-    
+
       <div class="swiper featured-slider">
         <div class="swiper-wrapper">
-    
           <div class="swiper-slide box">
-            <img src="" alt=""> <!--1.02.08 (5)-->
+            <img src="" alt="" />
+            <!--1.02.08 (5)-->
             <h3>new model</h3>
             <div class="stars">
               <i class="fas fa-star"></i>
@@ -341,9 +378,10 @@
             <div class="price">$55,000/-</div>
             <a href="#" class="btn">check out</a>
           </div>
-    
+
           <div class="swiper-slide box">
-            <img src="" alt=""> <!--1.02.08 (6)-->
+            <img src="" alt="" />
+            <!--1.02.08 (6)-->
             <h3>new model</h3>
             <div class="stars">
               <i class="fas fa-star"></i>
@@ -355,9 +393,10 @@
             <div class="price">$55,000/-</div>
             <a href="#" class="btn">check out</a>
           </div>
-    
+
           <div class="swiper-slide box">
-            <img src="" alt=""> <!--1.02.08 (7)-->
+            <img src="" alt="" />
+            <!--1.02.08 (7)-->
             <h3>new model</h3>
             <div class="stars">
               <i class="fas fa-star"></i>
@@ -369,9 +408,10 @@
             <div class="price">$55,000/-</div>
             <a href="#" class="btn">check out</a>
           </div>
-    
+
           <div class="swiper-slide box">
-            <img src="" alt=""> <!--1.02.08 (8)-->
+            <img src="" alt="" />
+            <!--1.02.08 (8)-->
             <h3>new model</h3>
             <div class="stars">
               <i class="fas fa-star"></i>
@@ -383,14 +423,230 @@
             <div class="price">$55,000/-</div>
             <a href="#" class="btn">check out</a>
           </div>
-          
         </div>
-        <div class="swiper-pagination"></div>
       </div>
     </section>
-    
+
     <!--featured section ends  fin Riki-->
+
+    <!-- newsletter section -->
+    <section class="newsletter">
+      <h3>Subscribirse para ultimas actualizaciones</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+        perspiciatis delectus quod rem eius hic ullam, molestiae voluptates ea
+        est ratione, veritatis dolorem quaerat? Deserunt voluptates suscipit
+        atque incidunt laborum!
+      </p>
+      <form action="">
+        <input type="email" name="" placeholder="Ingresa tu email" id="" />
+        <input type="submit" name="" class="subscribe" id="" />
+      </form>
+    </section>
+    <!-- newsletter section termina -->
+
+    <!-- review section empieza -->
+
+    <section class="review" id="review">
+      <h1 class="heading"><span>Reseñas</span> de Clientes</h1>
+      <div class="review-slider">
+        <div class="wrapper">
+          <div class="box">
+            <img src="imaage/pic-1.png" alt="" />
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio fugit aspernatur et soluta animi eos ratione
+                cupiditate, quas, neque esse nostrum delectus, officiis
+                repellendus placeat debitis dolorem rerum tenetur tempore?
+              </p>
+              <h3>Pedro Piedra</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="imaage/pic-2.png" alt="" />
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio fugit aspernatur et soluta animi eos ratione
+                cupiditate, quas, neque esse nostrum delectus, officiis
+                repellendus placeat debitis dolorem rerum tenetur tempore?
+              </p>
+              <h3>Pedro Piedra</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="imaage/pic-3.png" alt="" />
+            <div class="content">
+              <p>
+                Loremm ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio fugit aspernatur et soluta animi eos ratione
+                cupiditjate, quas, neque esse nostrum delectus, officiis
+                repellendus placeat debitis dolorem rerum tenetur tempore?
+              </p>
+              <h3>Pedro Piedra</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="imaage/pic-4.png" alt="" />
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio fugit aspernatur et soluta animi eos ratione
+                cupiditate, quas, neque esse nostrum delectus, officiis
+                repellendus placeat debitis dolorem rerum tenetur tempore?
+              </p>
+              <h3>Pedro Piedra</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="imaage/pic-5.png" alt="" />
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio fugit aspernatur et soluta animi eos ratione
+                cupiditate, quas, neque esse nostrum delectus, officiis
+                repellendus placeat debitis dolorem rerum tenetur tempore?
+              </p>
+              <h3>Pedro Piedra</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="imaage/pic-6.png" alt="" />
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio fugit aspernatur et soluta animi eos ratione
+                cupiditate, quas, neque esse nostrum delectus, officiis
+                repellendus placeat debitis dolorem rerum tenetur tempore?
+              </p>
+              <h3>Pedro Piedra</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- review section fin -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./index.js"></script>
+
+    <!--contact section arranca-->
+
+    <section class="contact" id="contact">
+      <h1 class="heading"><span>contact</span> us</h1>
+
+      <div class="row">
+        
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.8201137155534!2d-64.17979698530627!3d-31.4190819035253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a313dfac04e9%3A0x9fc5d13ac670e5e2!2sUTN%20cordoba!5e0!3m2!1sen!2sin!4v1680837710784!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <form action="">
+          <h3>get in touch</h3>
+          <input type="text" placeholder="name" class="box" />
+          <input type="email" placeholder="email" class="box" />
+          <input type="number" placeholder="number" class="box" />
+          <textarea
+            placeholder="message"
+            class="box"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <input type="submit" value="send message" class="btn" />
+        </form>
+      </div>
+    </section>
+
+    <!-- footer section arranca -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>our branches</h3>
+          <a href="#"><i class="fas fa-map-marker-alt"></i>india</a>
+          <a href="#"><i class="fas fa-map-marker-alt"></i>france</a>
+          <a href="#"><i class="fas fa-map-marker-alt"></i>africa</a>
+          <a href="#"><i class="fas fa-map-marker-alt"></i>australia</a>
+          <a href="#"><i class="fas fa-map-marker-alt"></i>russia</a>
+        </div>
+
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#"><i class="fas fa-arrow-right"></i>home</a>
+          <a href="#"><i class="fas fa-arrow-right"></i>vehicles</a>
+          <a href="#"><i class="fas fa-arrow-right"></i>services</a>
+          <a href="#"><i class="fas fa-arrow-right"></i>featured</a>
+          <a href="#"><i class="fas fa-arrow-right"></i>reviews</a>
+          <a href="#"><i class="fas fa-arrow-right"></i>contact</a>
+        </div>
+
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#"><i class="fas fa-phone"></i>+123-456-7890</a>
+          <a href="#"><i class="fas fa-phone"></i>+111-222-333</a>
+          <a href="#"><i class="fas fa-envelope"></i>kjdsfhf@gmail.com</a>
+          <a href="#"
+            ><i class="fas fa-map-marker-alt"></i>mumbai, india - 400104</a
+          >
+        </div>
+
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+          <a href="#"><i class="fab fa-twiter"></i>twiter</a>
+          <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+          <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
+          <a href="#"><i class="fab fa-pinterest"></i>pinterest</a>
+        </div>
+      </div>
+
+      <div class="credit">create by grupo 5 | derechos reservados</div>
+    </section>
   </body>
 </html>
-
