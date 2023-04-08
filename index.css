@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
 
 :root {
@@ -523,3 +524,90 @@ section {
 }
 
 /* newsletter section Fin */
+/* style-contact */
+
+.contact .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.contact .row .map {
+  flex: 1 1 42rem;
+  width: 100%;
+  padding: 2rem;
+  border: var(--border);
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+}
+.contact .row form {
+  flex: 1 1 42rem;
+  padding: 2rem;
+  border: var(--border);
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  text-align: center;
+}
+
+.contact .row form h3 {
+  font-size: 3rem;
+  color: var(--black);
+}
+
+.contact .row form .box {
+  margin: 0.7rem 0;
+  width: 100%;
+  border: var(--border);
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: var(--black);
+  text-transform: none;
+  border-radius: 0.5rem;
+}
+
+.contact .row form textarea {
+  height: 15rem;
+  resize: none;
+}
+
+/* style-footer */
+
+.footer {
+  background: var(--light-yellow);
+}
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+  color: var(--black);
+  font-size: 2.2rem;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a {
+  color: var(--light-color);
+  font-size: 1.4rem;
+  display: block;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a i {
+  padding-right: 0.5rem;
+  color: var(--black);
+}
+
+.footer .box-container .box a:hover i {
+  padding-right: 2rem;
+}
+
+.footer .credit {
+  text-align: center;
+  border-top: var(--border);
+  padding: 1rem;
+  padding-top: 2.5rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+}
