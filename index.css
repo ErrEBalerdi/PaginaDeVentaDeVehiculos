@@ -331,7 +331,7 @@ section {
 }
 /*Parte Responsive */
 
-/*services section inicio*/
+/*services section inicio riki*/
 
 .services .box-contariner{
     display:grid;
@@ -423,6 +423,6 @@ color:var(--yellow);
     font-size: 2.5rem;
     color:var(--black);
  }
-/*featured section fin*/
+/*featured section fin riki*/
 
 
