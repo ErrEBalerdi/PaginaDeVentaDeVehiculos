@@ -61,3 +61,29 @@ var swiper = new Swiper(".vehicles-slider", {
       },
     },
   });
+  //featured section inicio//
+
+ var swiper = new Swiper(".featured-slider", {
+  slidesPerView: 1,
+  spaceBetween:20,
+  loop:true,
+  grabCursor:true,
+  autoplay:{
+      delay: 9500,
+      disableOnInteraction:false,
+  },
+  pagination: {
+      el:".swiper-pagination",
+      clickable:true,
+  },
+  breakpoints: {
+      0:{slidesPerView: 1,
+      },
+      768: {
+          slidesPerView: 2,
+      },
+      991: {slidesPerView: 3,
+      },
+  },
+});
+ //featured section inicio fin riki//
