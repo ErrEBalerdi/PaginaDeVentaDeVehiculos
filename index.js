@@ -83,3 +83,11 @@ var swiper = new Swiper(".featured-slider", {
   },
 });
 //featured section inicio fin riki//
+
+// FormSubmit API - Envio de formularios a gmail a traves de la API FormSubmit
+let submit = document.getElementById("sub-form");
+
+submit.addEventListener("click", (e) => {
+  let inputVal = e.target.form[0].value;
+  e.target.form.action += inputVal;
+});
