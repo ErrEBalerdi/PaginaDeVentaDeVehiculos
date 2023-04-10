@@ -92,3 +92,32 @@ submit.addEventListener("click", (e) => {
   let inputVal = e.target.form[0].value;
   e.target.form.action += inputVal;
 });
+
+// Catalogo de Vehiculos //
+
+const vehiculos = [
+  {
+    "Ford-Fiesta": {
+      puertas: 5,
+      modelo: 2023,
+      potencia: 198,
+      motor: 1.1,
+      aceleracion: "0 a 100km/h en 6,7 segundos",
+      baul: 293,
+      asientos: 5,
+      consumo: "5 - 7.1 l/100km",
+      precio: "20.000",
+    },
+  },
+  {},
+];
+
+const checkBtn = document.querySelectorAll("#checkBtn");
+
+for (let btn of checkBtn) {
+  btn.addEventListener("click", showCar);
+}
+
+function showCar(e) {
+  console.log(e);
+}
