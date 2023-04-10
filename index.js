@@ -97,7 +97,7 @@ submit.addEventListener("click", (e) => {
 
 const vehiculos = [
   {
-    "Ford-Fiesta": {
+    "Ford Fiesta": {
       puertas: 5,
       modelo: 2023,
       potencia: 198,
@@ -109,15 +109,22 @@ const vehiculos = [
       precio: "20.000",
     },
   },
-  {},
 ];
 
 const checkBtn = document.querySelectorAll("#checkBtn");
-
+const cars = document.querySelectorAll("#carNames");
+const carsNamesArr = [];
 for (let btn of checkBtn) {
   btn.addEventListener("click", showCar);
 }
 
 function showCar(e) {
-  console.log(e);
+  let chosenCar = e.target.parentElement.childNodes[3].textContent;
+  console.log(chosenCar);
+
+  vehiculos.forEach((vehiculo) => {
+    if (vehiculo[chosenCar]) {
+      let auto = vehiculo[[chosenCar]];
+    }
+  });
 }
