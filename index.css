@@ -96,7 +96,7 @@ section {
 }
 
 .header .navbar a {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   margin: 0 1rem;
   color: var(--black);
 }
@@ -129,6 +129,7 @@ section {
 }
 
 /* Parte Responsive*/
+
 @media (max-width: 991px) {
   html {
     font-size: 55.5%;
@@ -139,17 +140,20 @@ section {
   padding: 2rem;
 }
 
-.header.active {
-  box-shadow: var(--box-shadow);
-  padding: 2rem 9%;
-}
-
 section {
   padding: 2rem;
 }
 
 /*Desplegar menu*/
-@media (max-width: 768px) {
+
+@media (max-width: 905px) {
+  .header.active {
+    box-shadow: var(--box-shadow);
+    padding: 2rem 4%;
+  }
+}
+
+@media (max-width: 780px) {
   #menu-btn {
     font-size: 2.5rem;
     color: var(--light-color);
