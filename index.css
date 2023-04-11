@@ -613,8 +613,6 @@ section {
   padding: 2rem;
   margin: 2rem 0;
   text-align: center;
-  /* opacity: 0.4;
-  transform: scale(0.9); */
 }
 
 .reviews .reviews-slider .box img {
@@ -622,6 +620,9 @@ section {
   width: 7rem;
   border-radius: 50%;
   margin-bottom: 1rem;
+}
+.reviews .reviews-slider .box:hover {
+  transform: scale(1.05);
 }
 
 .reviews .reviews-slider .box .content p {
