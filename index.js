@@ -203,11 +203,18 @@ const vehiculos = [
 ];
 
 const checkBtn = document.querySelectorAll("#checkBtn");
-
+const cars = document.querySelectorAll("#carNames");
 for (let btn of checkBtn) {
   btn.addEventListener("click", showCar);
 }
 
 function showCar(e) {
-  console.log(e);
+  let chosenCar = e.target.parentElement.childNodes[3].textContent;
+  console.log(chosenCar);
+
+  vehiculos.forEach((vehiculo) => {
+    if (vehiculo[chosenCar]) {
+      let auto = vehiculo[[chosenCar]];
+    }
+  });
 }

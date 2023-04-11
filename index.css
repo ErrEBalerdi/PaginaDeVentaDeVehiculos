@@ -7,6 +7,10 @@
   --light-color: #666;
   --border: 0.1rem solid rgba(0, 0, 0, 0.1);
   --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  --box-color-2:  #e2e2da ;
+}
+a{
+  text-decoration: none;
 }
 
 * {
@@ -269,6 +273,18 @@ section {
   padding: 1rem 1.2rem;
   border: var(--border);
   border-radius: 0.5rem;
+}
+
+.login-form-container form .box2 {
+    margin: 0.7rem 0;
+    width: 100%;
+    text-transform: none;
+    color: var(--black);
+    background-color: var(--box-color-2);
+    font-size: 1.6rem;
+    padding: 1rem 1.2rem;
+    border: var(--border);
+    border-radius: 0.5rem;
 }
 
 .login-form-container form p {
