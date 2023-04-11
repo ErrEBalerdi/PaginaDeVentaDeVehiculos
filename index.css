@@ -520,6 +520,7 @@ section {
   box-shadow: var(--box-shadow);
   border: var(--border);
   border-radius: 0.5rem;
+height: 470px;
 }
 .featured .featured-slider .box img {
   width: 100%;
@@ -547,6 +548,10 @@ section {
 .featured .featured-slider .box .price {
   font-size: 2.5rem;
   color: var(--black);
+}
+#checkBtn{
+  display: flex;
+  justify-content: center;
 }
 /*featured section fin riki*/
 
