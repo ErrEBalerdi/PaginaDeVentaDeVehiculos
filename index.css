@@ -9,6 +9,7 @@
   --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   --box-color-2: #e2e2da;
 }
+
 a {
   text-decoration: none;
 }
@@ -157,7 +158,7 @@ section {
   }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 782px) {
   #menu-btn {
     font-size: 2.5rem;
     color: var(--light-color);
