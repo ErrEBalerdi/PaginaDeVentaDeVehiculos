@@ -9,6 +9,9 @@
   --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   --box-color-2:  #e2e2da ;
 }
+a{
+  text-decoration: none;
+}
 
 * {
   font-family: "Poppins", sans-serif;
