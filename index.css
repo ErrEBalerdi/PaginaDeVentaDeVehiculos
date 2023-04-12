@@ -502,10 +502,14 @@ section {
   box-shadow: var(--box-shadow);
   border: var(--border);
   border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
 }
+
 .featured .featured-slider .box img {
   width: 100%;
   padding: 2rem;
+  min-height: 272px;
 }
 
 .featured .featured-slider .box:hover img {
