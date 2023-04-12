@@ -457,6 +457,13 @@ section {
 /*Seccion de vehiculos*/
 
 /*services section inicio riki*/
+.conteiner {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: vard(--box-shadow);
+  border: var(--border);
+}
 
 .services .box-container {
   display: grid;
@@ -495,16 +502,15 @@ section {
   line-height: 1.8;
 }
 
-.services .box-container .box:hover {
-  background: var(--black);
-}
-
-.services .box-container .box:hover h3 {
+.services .box-container .boxVentas:hover h3 {
   color: #fff;
 }
 
-.services .box-container .box:hover p {
+.services .box-container .boxVentas:hover p {
   color: #eee;
+}
+.boxVentas:hover  {
+  background: var(--black);
 }
 /*services section fin*/
 
