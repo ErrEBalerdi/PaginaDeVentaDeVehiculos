@@ -520,11 +520,14 @@ section {
   box-shadow: var(--box-shadow);
   border: var(--border);
   border-radius: 0.5rem;
-height: 470px;
+  display: flex;
+  flex-direction: column;
 }
+
 .featured .featured-slider .box img {
   width: 100%;
   padding: 2rem;
+  min-height: 272px;
 }
 
 .featured .featured-slider .box:hover img {
@@ -549,7 +552,7 @@ height: 470px;
   font-size: 2.5rem;
   color: var(--black);
 }
-#checkBtn{
+#checkBtn {
   display: flex;
   justify-content: center;
 }
