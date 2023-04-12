@@ -457,6 +457,13 @@ section {
 /*Seccion de vehiculos*/
 
 /*services section inicio riki*/
+.conteiner {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: vard(--box-shadow);
+  border: var(--border);
+}
 
 .services .box-container {
   display: grid;
@@ -493,10 +500,6 @@ section {
   font-size: 1.4rem;
   padding: 1rem 0;
   line-height: 1.8;
-}
-
-.services .box-container .box:hover {
-  
 }
 
 .services .box-container .boxVentas:hover h3 {
