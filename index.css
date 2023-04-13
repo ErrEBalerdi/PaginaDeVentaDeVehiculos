@@ -509,7 +509,7 @@ section {
 .services .box-container .boxVentas:hover p {
   color: #eee;
 }
-.boxVentas:hover  {
+.boxVentas:hover {
   background: var(--black);
 }
 /*services section fin*/
@@ -563,7 +563,8 @@ section {
   justify-content: center;
 }
 .Espacio {
-height: 100px};
+  height: 100px;
+}
 /*featured section fin riki*/
 
 /* newsletter Section Inicio */
@@ -738,11 +739,18 @@ height: 100px};
   padding-right: 2rem;
 }
 
-.footer .credit {
-  text-align: center;
-  border-top: var(--border);
-  padding: 1rem;
-  padding-top: 2.5rem;
-  margin-top: 2rem;
-  font-size: 2rem;
+/* footer bottom */
+
+.container-foot {
+  height: 100px;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-foot p {
+  font-size: 1.25rem;
+  margin: 0;
 }
