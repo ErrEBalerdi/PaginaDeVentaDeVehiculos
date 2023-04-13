@@ -219,43 +219,41 @@ function showCar(e) {
   });
 }
 
-/* wizard form */
+// Pasar de modal en modal
+$(document).ready(function () {
+  $("#siguiente").click(function () {
+    $("#modal").modal("hide");
+    $("#modal2").modal("show");
+  });
+});
 
-document.querySelector("#wizard-btn").onclick = () => {
-  document.querySelector(".wizard-form-container").classList.toggle("active")
+// Sistema de Valoracion
+const rating = document.querySelector(".rating");
+const stars = rating.querySelectorAll("input");
+const form = document.getElementById("myForm");
+const result = document.getElementById("result");
+
+function setRating(value) {
+  for (let i = 0; i < stars.length; i++) {
+    if (i < value) {
+      stars[i].checked = true;
+      stars[i].nextElementSibling.style.color = "ddd";
+    } else {
+      stars[i].checked = false;
+      stars[i].nextElementSibling.style.color = "##f8d64e";
+    }
+  }
 }
 
-document.querySelector("#close-wizard-form").onclick = () => {
-  document.querySelector(".wizard-form-container").classList.remove("active")
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  const comment = form.elements["comment"].value;
+  const rating = parseInt(form.elements["rating"].value);
+  result.innerText = `Comentario: ${comment}\nValoración: ${rating}`;
+});
+
+for (let i = 0; i < stars.length; i++) {
+  stars[i].addEventListener("click", function (e) {
+    setRating(parseInt(e.target.value));
+  });
 }
-
-/*Stepper del wizard*/
-
-var form1 = document.getElementById("form1"); 
-var form2 = document.getElementById("form2"); 
-var form3 = document.getElementById("form3"); 
-
-var next1 = document.getElementById("next1");
-var next2 = document.getElementById("next2");
-var back1 = document.getElementById("back1");
-var back2 = document.getElementById("back2");
-
-next1.onclick = function(){
-  form1.style.left = "-450px"
-  form2.style.left = "40px"
-} 
-back1.onclick = function(){
-  form1.style.left = "40px"
-  form2.style.left = "450px"
-}
-next2.onclick = function(){
-  form2.style.left = "-450px"
-  form3.style.left = "40px"
-}
-back2.onclick = function(){
-  form2.style.left = "40px"
-  form3.style.left = "450px"
-}
-
-/*Stepper del wizard*/
-/* wizard form */

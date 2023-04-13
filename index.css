@@ -568,8 +568,7 @@ section {
 .newsletter {
   padding: 6rem 2rem;
   text-align: center;
-  background: url(../image/letter-bg.png) no-repeat;
-  background-size: cover;
+  background: radial-gradient(#f9d806, #ffee80, #e2e2daaa, #e8f8c8aa);
 }
 
 .newsletter h3 {
@@ -748,7 +747,7 @@ section {
 
 /* WIZARD FORM */
 
-.wizard-form-container {
+/* .wizard-form-container {
   position: fixed;
   top: 105%;
   left: 0;
@@ -845,6 +844,39 @@ section {
   height: 100%;
   display: center;
   justify-content: center;
-}
+} */
 
 /* WIZARD FORM */
+
+.modal-footer {
+  position: relative;
+}
+#siguiente {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.rating {
+  display: inline-block;
+}
+
+.rating input[type="radio"] {
+  display: none;
+}
+
+.rating label:before {
+  content: "\2605";
+  font-size: 24px;
+  margin: 0 3px;
+  color: #999;
+}
+
+.rating label:hover:before,
+.rating input[type="radio"]:checked ~ label:before {
+  color: #f8d64e;
+}
+
+.rating input[type="radio"]:checked ~ label:before {
+  color: #f8d64e;
+}
