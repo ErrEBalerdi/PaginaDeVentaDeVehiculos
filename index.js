@@ -97,7 +97,7 @@ submit.addEventListener("click", (e) => {
 
 const vehiculos = [
   {
-    "Ford-Fiesta": {
+    "Ford Fiesta": {
       puertas: 5,
       modelo: 2023,
       potencia: 198,

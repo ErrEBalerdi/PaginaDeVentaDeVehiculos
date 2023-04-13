@@ -158,7 +158,7 @@ section {
   }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 782px) {
   #menu-btn {
     font-size: 2.5rem;
     color: var(--light-color);
@@ -202,18 +202,12 @@ section {
     margin: 2rem;
     font-size: 2rem;
   }
-
-  .body #wizard-btn .btn {
-    display: none;
-  }
-
 }
 
 @media (max-width: 450px) {
   html {
     font-size: 50%;
   }
-
   .heading {
     font-size: 3rem;
   }
@@ -463,17 +457,25 @@ section {
 /*Seccion de vehiculos*/
 
 /*services section inicio riki*/
+.conteiner {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: vard(--box-shadow);
+  border: var(--border);
+}
 
 .services .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   gap: 1.5rem;
 }
 
 .services .box-container .box {
   text-align: center;
   padding: 2rem;
-  border-radius: vard(--box-shadow);
+  border-radius: 0.5rem;
+  box-shadow: vard(--box-shadow);
   border: var(--border);
 }
 
@@ -500,18 +502,16 @@ section {
   line-height: 1.8;
 }
 
-.services .box-container .box:hover {
-  background: var(--black);
-}
-
-.services .box-container .box:hover h3 {
+.services .box-container .boxVentas:hover h3 {
   color: #fff;
 }
 
-.services .box-container .box:hover p {
+.services .box-container .boxVentas:hover p {
   color: #eee;
 }
-
+.boxVentas:hover  {
+  background: var(--black);
+}
 /*services section fin*/
 
 /*featured section inicio*/
@@ -526,11 +526,14 @@ section {
   box-shadow: var(--box-shadow);
   border: var(--border);
   border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .featured .featured-slider .box img {
   width: 100%;
   padding: 2rem;
+  min-height: 272px;
 }
 
 .featured .featured-slider .box:hover img {
@@ -555,7 +558,12 @@ section {
   font-size: 2.5rem;
   color: var(--black);
 }
-
+#checkBtn {
+  display: flex;
+  justify-content: center;
+}
+.Espacio {
+height: 100px};
 /*featured section fin riki*/
 
 /* newsletter Section Inicio */
@@ -621,8 +629,6 @@ section {
   padding: 2rem;
   margin: 2rem 0;
   text-align: center;
-  /* opacity: 0.4;
-  transform: scale(0.9); */
 }
 
 .reviews .reviews-slider .box img {
@@ -630,6 +636,9 @@ section {
   width: 7rem;
   border-radius: 50%;
   margin-bottom: 1rem;
+}
+.reviews .reviews-slider .box:hover {
+  transform: scale(1.05);
 }
 
 .reviews .reviews-slider .box .content p {
@@ -666,7 +675,6 @@ section {
   border-radius: 0.5rem;
   box-shadow: var(--box-shadow);
 }
-
 .contact .row form {
   flex: 1 1 42rem;
   padding: 2rem;
@@ -702,7 +710,6 @@ section {
 .footer {
   background: var(--light-yellow);
 }
-
 .footer .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -739,108 +746,3 @@ section {
   margin-top: 2rem;
   font-size: 2rem;
 }
-
-/* WIZARD FORM */
-
- .wizard-form-container {
-  position: fixed;
-  top: 105%;
-  left: 0;
-  z-index: 1000;
-  height: 100%;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.9);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-} 
-
-.wizard-form-container .active{
-  top: 0; 
-  opacity: 1;
-}
-
-.wizard-form-container span {
-  color: var(--yellow);
-}
-
-.wizard-form-container form {
-  padding: 2rem;
-  margin: 2rem;
-  border-radius: .5rem;
-  box-shadow: var(--box-shadow);
-  border: var(--border);
-  background: #fff;
-  text-align: center;
-  width: 40rem;
-}
-
-.wizard-form-container form .buttons {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.wizard-form-container form .buttons .btn {
-  display: block;
-  width: 100%;
-  margin: .5rem 0;
-}
-
-.wizard-form-container form h3{
-  color: var(--black);
-  font-size: 2.5rem;
-  padding-bottom: 1rem;
-}
-
-.wizard-form-container form .box{
-  margin: .7rem 0;
-  width: 100%;
-  text-transform: none;
-  color: var(--black);
-  background-color: var(--box-color-2);
-  font-size: 1.6rem;
-  padding: 1rem 1.2rem;
-  border: var(--border);
-  border-radius: 0.5rem;
-}
-
-.wizard-form-container form p {
-  padding: 1rem 0;
-  font-size: 1.5rem;
-  color: var(--light-color);
-}
-
-.wizard-form-container form p a {
-  color: var(--yellow);
-  text-decoration: underline;
-}
-
-.wizard-form-container #close-wizard-form{
-  position: absolute;
-  top: 1.5rem;
-  right: 2.5rem;
-  font-size: 5rem;
-  color: var(--black);
-  cursor: pointer;
-}
-
-.wizard-form-container #form2{
-  left: 450px;
-}
-
-.wizard-form-container #form3{
-  left: -450px;
-}
-
-.wizard-form-container #form4 img{
-  width: 100%;
-  height: 100%;
-  display: center;
-  justify-content: center;
-}
-
-
-
-/* WIZARD FORM */
