@@ -706,41 +706,41 @@ section {
 
 /* style-footer */
 
-.footer {
+.footer-links {
   background: var(--light-yellow);
 }
 
-.footer .box-container {
+.footer-links .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 1.5rem;
 }
 
-.footer .box-container .box h3 {
+.footer-links .box-container .box h3 {
   color: var(--black);
   font-size: 2.2rem;
   padding: 1rem 0;
 }
 
-.footer .box-container .box a {
+.footer-links .box-container .box a {
   color: var(--light-color);
   font-size: 1.4rem;
   display: block;
   padding: 1rem 0;
 }
 
-.footer .box-container .box a i {
+.footer-links .box-container .box a i {
   padding-right: 0.5rem;
   color: var(--black);
 }
 
-.footer .box-container .box a:hover i {
+.footer-links .box-container .box a:hover i {
   padding-right: 2rem;
 }
 
-/* footer bottom */
+/* footer credit */
 
-.container-foot-credit {
+.footer-credit {
   text-align: center;
   color: rgb(128, 128, 128);
   border-top: var(--border);
