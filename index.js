@@ -220,40 +220,24 @@ function showCar(e) {
 }
 
 // Pasar de modal en modal
+var modales = ["#modal1", "#modal2", "#modal3"]; // Array con los IDs de los modales
+var indiceActual = 0; // Índice del modal actualmente visible
+
+function siguienteModal() {
+  $(modales[indiceActual]).modal("hide"); // Ocultar el modal actual
+  indiceActual = (indiceActual + 1) % modales.length; // Calcular el índice del siguiente modal
+  $(modales[indiceActual]).modal("show"); // Mostrar el siguiente modal
+}
+
 $(document).ready(function () {
-  $("#siguiente").click(function () {
-    $("#modal").modal("hide");
-    $("#modal2").modal("show");
-  });
-});
-
-// Sistema de Valoracion
-const rating = document.querySelector(".rating");
-const stars = rating.querySelectorAll("input");
-const form = document.getElementById("myForm");
-const result = document.getElementById("result");
-
-function setRating(value) {
-  for (let i = 0; i < stars.length; i++) {
-    if (i < value) {
-      stars[i].checked = true;
-      stars[i].nextElementSibling.style.color = "ddd";
-    } else {
-      stars[i].checked = false;
-      stars[i].nextElementSibling.style.color = "##f8d64e";
+  // Agregar evento de clic a las estrellas
+  $("#rating-stars i").click(function () {
+    var rating = $(this).data("rating"); // Obtener la valoración de la estrella clickeada
+    $("#rating-stars i").removeClass("fas").addClass("far"); // Resetear todas las estrellas
+    for (var i = 1; i <= rating; i++) {
+      $("#rating-stars i:nth-child(" + i + ")")
+        .removeClass("far")
+        .addClass("fas"); // Marcar las estrellas seleccionadas
     }
-  }
-}
-
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-  const comment = form.elements["comment"].value;
-  const rating = parseInt(form.elements["rating"].value);
-  result.innerText = `Comentario: ${comment}\nValoración: ${rating}`;
-});
-
-for (let i = 0; i < stars.length; i++) {
-  stars[i].addEventListener("click", function (e) {
-    setRating(parseInt(e.target.value));
   });
-}
+});
