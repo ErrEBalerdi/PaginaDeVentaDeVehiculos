@@ -3,6 +3,7 @@
 :root {
   --yellow: #f9d806;
   --light-yellow: #ffee80;
+  --light-yellow-footer: #000000;
   --black: #130f40;
   --light-color: #666;
   --border: 0.1rem solid rgba(0, 0, 0, 0.1);
@@ -163,7 +164,7 @@ section {
     font-size: 2.5rem;
     color: var(--light-color);
     cursor: pointer;
-    display: none;
+    display: block;
   }
 
   /*Desplegar menu*/
@@ -172,11 +173,17 @@ section {
     transform: rotate(188deg);
   }
 
+  /* Solucion del navbar responsive */
+  .navbar {
+    flex-direction: column;
+    display: inline;
+  }
+  /* Solucion del navbar responsive */
   .header #login-btn i {
     font-size: 2.5rem;
     color: var(--light-color);
     cursor: pointer;
-    display: none;
+    display: block;
   }
 
   .header #login-btn .btn {
@@ -208,6 +215,7 @@ section {
   html {
     font-size: 50%;
   }
+
   .heading {
     font-size: 3rem;
   }
@@ -295,10 +303,10 @@ section {
 }
 
 .login-form-container #close-login-form {
-  position: absolute;
-  top: 1.5rem;
+  top: 5.5rem;
   right: 2.5rem;
-  font-size: 5rem;
+  padding-left: 95%;
+  font-size: 3rem;
   color: var(--black);
   cursor: pointer;
 }
@@ -370,24 +378,8 @@ section {
   color: var(--light-color);
   font-size: 1.5rem;
 }
-
-.icons-container .icons:hover {
-  background: var(--black);
-}
-
-.icons-container .icons:hover i {
-  background: var(--yellow);
-}
-
-.icons-container .icons:hover .content h3 {
-  color: #fff;
-}
-
-.icons-container .icons:hover .content p {
-  color: #eee;
-}
-
 /*Iconos*/
+
 /*Seccion de vehiculos*/
 .vehicles .vehicles-slider {
   padding-bottom: 5rem;
@@ -558,10 +550,12 @@ section {
   font-size: 2.5rem;
   color: var(--black);
 }
+
 #checkBtn {
   display: flex;
   justify-content: center;
 }
+
 .Espacio {
   height: 100px;
 }
@@ -638,6 +632,7 @@ section {
   border-radius: 50%;
   margin-bottom: 1rem;
 }
+
 .reviews .reviews-slider .box:hover {
   transform: scale(1.05);
 }
@@ -676,6 +671,7 @@ section {
   border-radius: 0.5rem;
   box-shadow: var(--box-shadow);
 }
+
 .contact .row form {
   flex: 1 1 42rem;
   padding: 2rem;
@@ -711,6 +707,7 @@ section {
 .footer {
   background: var(--light-yellow);
 }
+
 .footer .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -753,4 +750,14 @@ section {
 .container-foot p {
   font-size: 1.25rem;
   margin: 0;
+}
+
+.credit{
+  text-align: center;
+  color: rgb(128, 128, 128);
+  border-top: var(--border);
+  background-color: var(--light-yellow-footer);
+  padding: 2rem;
+  font-size: 1rem;
+  
 }
