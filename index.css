@@ -3,8 +3,9 @@
 :root {
   --yellow: #f9d806;
   --light-yellow: #ffee80;
-  --light-yellow-footer: #000000;
+  --black-footer: #000000;
   --black: #130f40;
+  --white: #fefefe;
   --light-color: #666;
   --border: 0.1rem solid rgba(0, 0, 0, 0.1);
   --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
