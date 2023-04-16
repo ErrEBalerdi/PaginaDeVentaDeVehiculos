@@ -263,7 +263,6 @@ back2.onclick = function () {
 // rating system
 const stars = document.querySelectorAll(".star");
 const ratingValue = document.querySelector("#value");
-
 let valueRate = 0;
 let rating = {
   1: "Segui participando",
