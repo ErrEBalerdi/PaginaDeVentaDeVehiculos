@@ -219,51 +219,13 @@ function showCar(e) {
   });
 }
 
-/* wizard form */
-
-document.querySelector("#wizard-btn").onclick = () => {
-  document.querySelector(".wizard-form-container").classList.toggle("active");
-};
-
-document.querySelector("#close-wizard-form").onclick = () => {
-  document.querySelector(".wizard-form-container").classList.remove("active");
-};
-
-/*Stepper del wizard*/
-
-var form1 = document.getElementById("form1");
-var form2 = document.getElementById("form2");
-var form3 = document.getElementById("form3");
-
-var next1 = document.getElementById("next1");
-var next2 = document.getElementById("next2");
-var back1 = document.getElementById("back1");
-var back2 = document.getElementById("back2");
-
-next1.onclick = function () {
-  form1.style.left = "-450px";
-  form2.style.left = "40px";
-};
-back1.onclick = function () {
-  form1.style.left = "40px";
-  form2.style.left = "450px";
-};
-next2.onclick = function () {
-  form2.style.left = "-450px";
-  form3.style.left = "40px";
-};
-back2.onclick = function () {
-  form2.style.left = "40px";
-  form3.style.left = "450px";
-};
-
-/*Stepper del wizard*/
-/* wizard form */
-
 // rating system
+
 const stars = document.querySelectorAll(".star");
 const ratingValue = document.querySelector("#value");
+
 let valueRate = 0;
+
 let rating = {
   1: "Segui participando",
   2: "Meh",
@@ -271,7 +233,6 @@ let rating = {
   4: "Buenardo",
   5: "Rey de reyes",
 };
-
 stars.forEach(function (star) {
   star.addEventListener("click", function () {
     valueRate = parseInt(this.getAttribute("data-value"));
