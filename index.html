@@ -152,6 +152,7 @@
           <input type="submit" value="Enviar Mensaje" class="btn" />
         </form>
       </div>
+<<<<<<< HEAD
     </section>
 
     <!-- Modal -->
@@ -164,55 +165,44 @@
         data-bs-target="#review-modal"
       >
         Valora nuestra pagina
+=======
+      <button class="btn btn-primary" data-toggle="modal" data-target="#modal1">
+        Valora nuestra página
+>>>>>>> parent of 3ef009b (modal y rating system)
       </button>
-
-      <!-- The Modal -->
-      <div class="modal" id="review-modal">
+      <div class="modal fade" id="modal1">
         <div class="modal-dialog">
           <div class="modal-content">
-            <!-- Modal Header -->
             <div class="modal-header">
-              <h4 class="modal-title">LuxuryCars - Reseña</h4>
-              <button type="button" class="close" data-bs-dismiss="modal">
+              <h4 class="modal-title">LuxuryCars</h4>
+              <!-- Título del modal -->
+              <button type="button" class="close" data-dismiss="modal">
                 &times;
               </button>
             </div>
-
-            <!-- Modal body -->
             <div class="modal-body">
-              <h2 class="mt-3">¿Que te parecio nuestra pagina?</h2>
-              <p class="fs-3 mt-4">Dejanos tu opinion</p>
-            </div>
-
-            <!-- rate start -->
-            <div class="rating">
-              <span class="star" data-value="1"></span>
-              <span class="star" data-value="2"></span>
-              <span class="star" data-value="3"></span>
-              <span class="star" data-value="4"></span>
-              <span class="star" data-value="5"></span>
-            </div>
-
-            <div class="rating-value">
-              <span class="fs-1">Valoracion: </span>
-              <span id="value"></span>
-            </div>
-
-            <!-- Modal footer -->
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-primary"
-                id="rate-btn"
-                data-bs-dismiss="modal"
-              >
-                Valorar
-              </button>
+              <p>Califica nuestro servicio:</p>
+              <div id="rating-stars">
+                <i class="far fa-star" data-rating="1"></i>
+                <i class="far fa-star" data-rating="2"></i>
+                <i class="far fa-star" data-rating="3"></i>
+                <i class="far fa-star" data-rating="4"></i>
+                <i class="far fa-star" data-rating="5"></i>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+      <div class="modal fade" id="modal2">
+        <!-- Contenido del modal 2 -->
+      </div>
+      <div class="modal fade" id="modal3">
+        <!-- Contenido del modal 3 -->
+      </div>
+
+      <button onclick="siguienteModal()">Siguiente</button>
+    </section>
+
     <!-- footer section arranca -->
 
     <section class="footer-links">
@@ -289,13 +279,27 @@
     <footer class="footer-credit">
       <span>create by grupo 5</span> | <span>derechos reservados</span>
     </footer>
+<<<<<<< HEAD
 
     <script src="index.js"></script>
 
     <!-- bootstrap script -->
+=======
+>>>>>>> parent of 3ef009b (modal y rating system)
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
       crossorigin="anonymous"
     ></script>
     <script
@@ -303,5 +307,6 @@
       integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
       crossorigin="anonymous"
     ></script>
+    <script src="./index.js"></script>
   </body>
 </html>
