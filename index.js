@@ -33,7 +33,7 @@ window.onload = () => {
   }
 };
 
-var swiper = new Swiper(".vehicles-slider", {
+let swiper1 = new Swiper(".vehicles-slider", {
   slidesPerView: 1,
   spaceBetween: 20,
   loop: true,
@@ -62,7 +62,7 @@ var swiper = new Swiper(".vehicles-slider", {
 
 //featured section inicio//
 
-var swiper = new Swiper(".featured-slider", {
+let swiper2 = new Swiper(".featured-slider", {
   slidesPerView: 1,
   spaceBetween: 20,
   loop: true,
@@ -201,61 +201,3 @@ const vehiculos = [
     },
   },
 ];
-
-const checkBtn = document.querySelectorAll("#checkBtn");
-const cars = document.querySelectorAll("#carNames");
-for (let btn of checkBtn) {
-  btn.addEventListener("click", showCar);
-}
-
-function showCar(e) {
-  let chosenCar = e.target.parentElement.childNodes[3].textContent;
-  console.log(chosenCar);
-
-  vehiculos.forEach((vehiculo) => {
-    if (vehiculo[chosenCar]) {
-      let auto = vehiculo[[chosenCar]];
-    }
-  });
-}
-
-/* wizard form */
-
-document.querySelector("#wizard-btn").onclick = () => {
-  document.querySelector(".wizard-form-container").classList.toggle("active")
-}
-
-document.querySelector("#close-wizard-form").onclick = () => {
-  document.querySelector(".wizard-form-container").classList.remove("active")
-}
-
-/*Stepper del wizard*/
-
-var form1 = document.getElementById("form1"); 
-var form2 = document.getElementById("form2"); 
-var form3 = document.getElementById("form3"); 
-
-var next1 = document.getElementById("next1");
-var next2 = document.getElementById("next2");
-var back1 = document.getElementById("back1");
-var back2 = document.getElementById("back2");
-
-next1.onclick = function(){
-  form1.style.left = "-450px"
-  form2.style.left = "40px"
-} 
-back1.onclick = function(){
-  form1.style.left = "40px"
-  form2.style.left = "450px"
-}
-next2.onclick = function(){
-  form2.style.left = "-450px"
-  form3.style.left = "40px"
-}
-back2.onclick = function(){
-  form2.style.left = "40px"
-  form3.style.left = "450px"
-}
-
-/*Stepper del wizard*/
-/* wizard form */
