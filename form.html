@@ -1,0 +1,120 @@
+<!-- Add the Bootstrap CSS stylesheet in the head section of your HTML document -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+</head>
+<style>
+#textareaError {
+  display: none;
+  color: red;
+
+}
+</style>
+<body>
+  
+<!-- Create a Bootstrap form with inputs for name, email, and message -->
+<div class="container mt-5">
+  <form id="contact-form">
+    <div class="form-group">
+      <label for="name">Nombre:</label>
+
+      <input type="text" class="form-control" id="name" name="name" required />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        name="email"
+        required
+      />
+    </div>
+    <label for="phone">Teléfono:</label>
+    <input type="text" id="phone" name="phone">
+    <div class="form-group">
+      <label for="message">Mensaje:</label>
+
+      <textarea
+        class="form-control"
+        id="message"
+        name="message"
+        rows="5"
+        required
+      ></textarea>
+    </div>
+    <p id='textareaError'>El mensaje es demasiado corto</p>
+
+    <button type="submit" id="btn-submit" class="btn btn-primary">Enviar</button>
+  </form>
+  <div>
+<!-- Include the jQuery library -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+const form = $("#contact-form");
+const nameInput = $("#name");
+const emailInput = $("#email");
+const phoneInput = $("#phone");
+const messageInput = $("#message");
+const submitBtn = $("#btn-submit");
+
+// previene al form de hacer enviar el formulario
+$("#contact-form").submit(function(event) {
+  // prevent the default form submission
+  event.preventDefault();
+})
+
+submitBtn.click(function() {
+
+  const nameValue = nameInput.val();
+  const emailValue = emailInput.val();
+  const phoneValue = phoneInput.val();
+  const messageValue = messageInput.val();
+  
+    if (!nameValue.match(/^[a-zA-ZáéíóúñÑÁÉÍÓÚ]{5,}$/)) {
+      nameInput.css('outline', '1px solid red');
+      nameInput.focus();
+    } else nameInput.css('outline', '1px solid green');
+
+    if (!emailValue.match(/^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/)) {
+        emailInput.css('outline', '1px solid red');
+        emailInput.focus();
+    } else emailInput.css('outline', '1px solid green');
+
+    if (phoneValue == "" && !phoneValue.match(/^\d{7,14}$/)) {
+          phoneInput.css('outline', '1px solid red')
+          phoneInput.focus();
+    } else phoneInput.css('outline', '1px solid green');
+
+    if (messageValue.length < 10) {
+            messageInput.css('outline', '1px solid red')
+            messageInput.focus();
+            $("#textareaError").fadeIn(1000)
+    } else {
+      messageInput.css('outline', '1px solid green');
+      $("#textareaError").fadeOut()
+
+    }
+
+  // si todas las validaicones pasan se envia el form
+  form.submit();
+});
+
+</script>
+  
+</body>
+</html>
