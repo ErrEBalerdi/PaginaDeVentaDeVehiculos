@@ -256,17 +256,19 @@
         document.querySelector("#close-wizard-form").onclick = () => {
             document.querySelector(".wizard-form-container").classList.toggle("active");
         };
-        document.querySelector("#back").onclick = () => {
-            document.querySelector(".wizard-form-container2").classList.toggle("active");
-        };
+
         /* Abrir modal wizard */
 
         /*Modal2 wizard */
         document.querySelector("#wizard-btn2").onclick = () => {
             document.querySelector(".wizard-form-container2").classList.toggle("active");
         };
+        document.querySelector("#back").onclick = () => {
+            document.querySelector(".wizard-form-container2").classList.toggle("active");
+        };
 
         document.querySelector("#close-wizard-form2").onclick = () => {
+            document.querySelector(".wizard-form-container").classList.toggle("active");
             document.querySelector(".wizard-form-container2").classList.toggle("active");
         };
         document.querySelector("#terminar").onclick = () => {
