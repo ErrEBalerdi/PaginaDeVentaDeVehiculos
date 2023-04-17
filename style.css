@@ -3,9 +3,10 @@
 :root {
   --yellow: #f9d806;
   --light-yellow: #ffee80;
-  --light-yellow-footer: #000000;
+  --black-footer: #000000;
   --black: #130f40;
   --light-color: #666;
+  --white: #fefaf9;
   --border: 0.1rem solid rgba(0, 0, 0, 0.1);
   --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   --box-color-2: #e2e2da;
@@ -704,8 +705,7 @@ section {
   resize: none;
 }
 
-<<<<<<< HEAD:style.css
-/* modal */
+/* modal style */
 .modal-header {
   background-color: var(--yellow);
   color: var(--black);
@@ -734,6 +734,7 @@ section {
 }
 
 /* stars */
+
 .rating {
   display: inline-block;
 }
@@ -764,8 +765,6 @@ section {
   margin-left: 5px;
 }
 
-=======
->>>>>>> parent of 3ef009b (modal y rating system):index.css
 /* style-footer */
 
 .footer-links {
