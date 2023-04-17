@@ -573,8 +573,6 @@ section {
 .newsletter {
   padding: 6rem 2rem;
   text-align: center;
-  background: url(../image/letter-bg.png) no-repeat;
-  background-size: cover;
 }
 
 .newsletter h3 {
@@ -707,6 +705,15 @@ section {
 .contact .row form textarea {
   height: 15rem;
   resize: none;
+}
+/* form validator */
+
+.box.error {
+  border: 2px solid red;
+}
+
+.box.valid {
+  border: 2px solid green;
 }
 
 /* modal style */

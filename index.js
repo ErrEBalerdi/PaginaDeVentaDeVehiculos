@@ -201,3 +201,40 @@ const vehiculos = [
     },
   },
 ];
+
+function validateForm() {
+  const name = document.getElementById("name");
+  const email = document.getElementById("email");
+  const phone = document.getElementById("phone");
+
+  const nameRegex = /^[a-z ,.'-]+$/i;
+  const emailRegex =
+    /^[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*@[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*$/;
+  const phoneRegex = /^\d{10}$/;
+
+  if (!nameRegex.test(name.value)) {
+    name.classList.add("error");
+    name.classList.remove("valid");
+  } else {
+    name.classList.add("valid");
+    name.classList.remove("error");
+  }
+
+  if (!emailRegex.test(email.value)) {
+    email.classList.add("error");
+    email.classList.remove("valid");
+  } else {
+    email.classList.add("valid");
+    email.classList.remove("error");
+  }
+
+  if (!phoneRegex.test(phone.value)) {
+    phone.classList.add("error");
+    phone.classList.remove("valid");
+  } else {
+    phone.classList.add("valid");
+    phone.classList.remove("error");
+  }
+
+  return !document.querySelectorAll(".error").length;
+}
