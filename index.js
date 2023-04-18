@@ -33,7 +33,7 @@ window.onload = () => {
   }
 };
 
-var swiper = new Swiper(".vehicles-slider", {
+let swiper1 = new Swiper(".vehicles-slider", {
   slidesPerView: 1,
   spaceBetween: 20,
   loop: true,
@@ -62,7 +62,7 @@ var swiper = new Swiper(".vehicles-slider", {
 
 //featured section inicio//
 
-var swiper = new Swiper(".featured-slider", {
+let swiper2 = new Swiper(".featured-slider", {
   slidesPerView: 1,
   spaceBetween: 20,
   loop: true,
@@ -202,110 +202,52 @@ const vehiculos = [
   },
 ];
 
-const checkBtn = document.querySelectorAll("#checkBtn");
-const cars = document.querySelectorAll("#carNames");
-for (let btn of checkBtn) {
-  btn.addEventListener("click", showCar);
-}
+// form validator
+const form = $("#contact-form");
+const nameInput = $("#name");
+const emailInput = $("#email");
+const phoneInput = $("#phone");
+const messageInput = $("#message");
+const submitBtn = $("#btn-submit");
 
-function showCar(e) {
-  let chosenCar = e.target.parentElement.childNodes[3].textContent;
-  console.log(chosenCar);
-
-  vehiculos.forEach((vehiculo) => {
-    if (vehiculo[chosenCar]) {
-      let auto = vehiculo[[chosenCar]];
-    }
-  });
-}
-
-/* wizard form */
-
-document.querySelector("#wizard-btn").onclick = () => {
-  document.querySelector(".wizard-form-container").classList.toggle("active");
-};
-
-document.querySelector("#close-wizard-form").onclick = () => {
-  document.querySelector(".wizard-form-container").classList.remove("active");
-};
-
-/*Stepper del wizard*/
-
-var form1 = document.getElementById("form1");
-var form2 = document.getElementById("form2");
-var form3 = document.getElementById("form3");
-
-var next1 = document.getElementById("next1");
-var next2 = document.getElementById("next2");
-var back1 = document.getElementById("back1");
-var back2 = document.getElementById("back2");
-
-next1.onclick = function () {
-  form1.style.left = "-450px";
-  form2.style.left = "40px";
-};
-back1.onclick = function () {
-  form1.style.left = "40px";
-  form2.style.left = "450px";
-};
-next2.onclick = function () {
-  form2.style.left = "-450px";
-  form3.style.left = "40px";
-};
-back2.onclick = function () {
-  form2.style.left = "40px";
-  form3.style.left = "450px";
-};
-
-/*Stepper del wizard*/
-/* wizard form */
-
-// rating system
-const stars = document.querySelectorAll(".star");
-const ratingValue = document.querySelector("#value");
-let valueRate = 0;
-let rating = {
-  1: "Segui participando",
-  2: "Meh",
-  3: "Algo hicieron bien",
-  4: "Buenardo",
-  5: "Rey de reyes",
-};
-
-stars.forEach(function (star) {
-  star.addEventListener("click", function () {
-    valueRate = parseInt(this.getAttribute("data-value"));
-    setRating();
-  });
-  star.addEventListener("mouseover", function () {
-    resetStars();
-    const currentRating = parseInt(this.getAttribute("data-value"));
-    highlightStars(currentRating);
-  });
-  star.addEventListener("mouseout", function () {
-    resetStars();
-    if (valueRate !== 0) {
-      highlightStars(valueRate);
-    }
-  });
+// previene al form de hacer enviar el formulario
+$("#contact-form").submit(function (event) {
+  // prevent the default form submission
+  event.preventDefault();
 });
 
-function setRating() {
-  resetStars();
-  for (let i = 0; i < rating; i++) {
-    stars[i].classList.add("selected");
-  }
-  ratingValue.innerHTML = rating[valueRate];
-}
+submitBtn.click(function () {
+  const nameValue = nameInput.val();
+  const emailValue = emailInput.val();
+  const phoneValue = phoneInput.val();
+  const messageValue = messageInput.val();
 
-function resetStars() {
-  stars.forEach(function (star) {
-    star.classList.remove("selected");
-  });
-}
+  if (!nameValue.match(/^[a-zA-ZáéíóúñÑÁÉÍÓÚ]{5,}$/)) {
+    nameInput.css("outline", "1px solid red");
+    nameInput.focus();
+  } else nameInput.css("outline", "1px solid green");
 
-function highlightStars(rating) {
-  for (let i = 0; i < rating; i++) {
-    stars[i].classList.add("selected");
+  if (
+    !emailValue.match(
+      /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/
+    )
+  ) {
+    emailInput.css("outline", "1px solid red");
+    emailInput.focus();
+  } else emailInput.css("outline", "1px solid green");
+
+  if (phoneValue == "" && !phoneValue.match(/^\d{7,14}$/)) {
+    phoneInput.css("outline", "1px solid red");
+    phoneInput.focus();
+  } else phoneInput.css("outline", "1px solid green");
+
+  if (messageValue.length < 8) {
+    messageInput.css("outline", "1px solid red");
+    messageInput.focus();
+  } else {
+    messageInput.css("outline", "1px solid green");
   }
-}
+
+  // si todas las validaicones pasan se envia el form
+  form.submit();
+});
