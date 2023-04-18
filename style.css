@@ -593,9 +593,12 @@ section {
   border: var(--border);
   width: 800PX;
 }
-.visual{
-  height: 200px;
+.visual {
+  height: 150px;
   width: 400px;
+  display: flex;
+  position: relative;
+  left: 25%;
 }
 .info1 {
   margin: 0.7rem 3px;
@@ -656,11 +659,12 @@ section {
 .info-container form h3 {
   color: var(--black);
   font-size: 2.5rem;
-  padding-bottom: 1rem;
   text-transform: uppercase;
 }
 
 .tImg{
+  position: relative;
+  bottom: 30px;
   height: 200PX;
 }
 
