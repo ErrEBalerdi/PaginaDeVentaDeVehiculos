@@ -1,11 +1,25 @@
 // FormSubmit API - Envio de formularios a gmail a traves de la API FormSubmit
-let submit = document.getElementById("sub-form");
+const form = document.getElementById("form-api");
+const email = document.getElementById("inputEmail");
 
-submit.addEventListener("click", (e) => {
-  let inputVal = e.target.form[0].value;
-  e.target.form.action += inputVal;
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const email = email.value.trim();
+
+  if (!email || !isValidEmail(email)) {
+    email.focus();
+    return;
+  }
+  form.action = `${form.action}${email}`;
+  form.submit();
 });
 
+function isValidEmail(email) {
+  const emailRegex =
+    /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+  return emailRegex.test(email);
+}
 // form validator
 const contactForm = $("#contact-form");
 const nameInput = $("#name");
