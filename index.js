@@ -13,6 +13,45 @@ document.querySelector("#login-btn").onclick = () => {
 document.querySelector("#close-login-form").onclick = () => {
   document.querySelector(".login-form-container").classList.toggle("active");
 };
+/* Abrir modal wizard */
+document.querySelector("#wizard-btn").onclick = () => {
+  document.querySelector(".wizard-form-container").classList.toggle("active");
+};
+
+document.querySelector("#close-wizard-form").onclick = () => {
+  document.querySelector(".wizard-form-container").classList.toggle("active");
+};
+
+/* Abrir modal wizard */
+
+/*Modal2 wizard */
+document.querySelector("#wizard-btn2").onclick = () => {
+  document.querySelector(".wizard-form-container2").classList.toggle("active");
+};
+document.querySelector("#back").onclick = () => {
+  document.querySelector(".wizard-form-container2").classList.toggle("active");
+};
+
+document.querySelector("#close-wizard-form2").onclick = () => {
+  document.querySelector(".wizard-form-container").classList.toggle("active");
+  document.querySelector(".wizard-form-container2").classList.toggle("active");
+};
+document.querySelector("#terminar").onclick = () => {
+  document.querySelector(".wizard-form-container2").classList.toggle("active");
+  document.querySelector(".wizard-form-container").classList.toggle("active");
+};
+/*Modal2 wizard */
+
+/*Modal3 wizard */
+
+document.querySelector("#wizard-btn3").onclick = () => {
+  document.querySelector(".wizard-form-container3").classList.toggle("active");
+};
+
+document.querySelector("#close-wizard-form3").onclick = () => {
+  document.querySelector(".wizard-form-container3").classList.toggle("active");
+};
+/*Modal3 wizard */
 
 window.onscroll = () => {
   if (window.scrollY > 0) {
