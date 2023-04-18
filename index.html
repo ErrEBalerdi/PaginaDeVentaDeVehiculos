@@ -1,58 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Final</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Proyecto Final</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <body>
+    <!--Inicio del header-->
+    <header class="header">
+      <div id="menu-btn" class="fas fa-bars"></div>
+      <a href="index.html" class="logo"> <span>luxury</span>Cars</a>
 
-<body>
-  <!--Inicio del header-->
-  <header class="header">
-    <div id="menu-btn" class="fas fa-bars"></div>
-    <a href="index.html" class="logo"> <span>luxury</span>Cars</a>
+      <nav class="navbar">
+        <a href="#home">inicio</a>
+        <a href="vehiculos-destacados.html">vehiculos</a>
+        <a href="servicios.html">servicios</a>
+        <a id="wizard-btn" href="#">reseña</a>
+        <a href="team.html#reviews-section">equipo</a>
+        <a href="#contact-section">contacto</a>
+      </nav>
 
-    <nav class="navbar">
-      <a href="#home">inicio</a>
-      <a href="vehiculos-destacados.html">vehiculos</a>
-      <a href="servicios.html">servicios</a>
-      <a id="wizard-btn" href="#">reseña</a>
-      <a href="team.html#reviews-section">equipo</a>
-      <a href="#contact-section">contacto</a>
-    </nav>
+      <div id="login-btn">
+        <button class="btn">Cuenta</button>
+        <i class="far fa-user"></i>
+      </div>
+    </header>
 
-    <div id="login-btn">
-      <button class="btn">Cuenta</button>
-      <i class="far fa-user"></i>
+    <!--fin del header-->
+
+    <!--Inicio del login-->
+    <div class="login-form-container">
+      <form action="">
+        <span class="fas fa-times" id="close-login-form"></span>
+        <h3>cliente</h3>
+        <img
+          src="https://i.gyazo.com/42a8d886d8dd8a9dc89864494f1a107f.png"
+          alt="icono"
+        />
+        <p class="box2">Email: uncorreo@gmail.com</p>
+        <p class="box2">Cliente: Pablo Heredia</p>
+        <p class="box2">Fecha de creación: 16/04/23</p>
+        <p class="box2">Fecha de nacimiento 14/06/00</p>
+        <p class="box2">Nacionalidad: Argentina</p>
+        <p class="box2">Sexo: Masculino</p>
+      </form>
     </div>
-  </header>
+    <!--Fin del login-->
 
-  <!--fin del header-->
-
-  <!--Inicio del login-->
-  <div class="login-form-container">
-    <form action="">
-      <span class="fas fa-times" id="close-login-form"></span>
-      <h3>cliente</h3>
-      <img src="https://i.gyazo.com/42a8d886d8dd8a9dc89864494f1a107f.png" alt="icono" />
-      <p class="box2">Email: uncorreo@gmail.com</p>
-      <p class="box2">Cliente: Pablo Heredia</p>
-      <p class="box2">Fecha de creación: 16/04/23</p>
-      <p class="box2">Fecha de nacimiento 14/06/00</p>
-      <p class="box2">Nacionalidad: Argentina</p>
-      <p class="box2">Sexo: Masculino</p>
-    </form>
-  </div>
-  <!--Fin del login-->
-
-  <!-- Wizard -->
+    <!-- Wizard -->
 
     <div class="wizard-form-container">
       <form action="" id="">
@@ -302,152 +314,243 @@
     </div>
     <!-- Wizard -->
 
-  <!--inicio del home-->
-  <section class="home" id="home">
-    <h1 class="home-parallax">encontra tu vehículo</h1>
-    <img class="home-parallax" src="https://i.gyazo.com/757ea9d4577b8eec07fae5b4f39622e1.jpg" alt="auto" />
-  </section>
-  <!--Fin del home-->
+    <!--inicio del home-->
+    <section class="home" id="home">
+      <h1 class="home-parallax">encontra tu vehículo</h1>
+      <img
+        class="home-parallax"
+        src="https://i.gyazo.com/757ea9d4577b8eec07fae5b4f39622e1.jpg"
+        alt="auto"
+      />
+    </section>
+    <!--Fin del home-->
 
-  <!--Seccion de iconos-->
-  <section class="icons-container">
-    <div class="icons">
-      <i class="fas fa-home"></i>
-      <div class="content">
-        <h3>20+</h3>
-        <p>sucursales</p>
+    <!--Seccion de iconos-->
+    <section class="icons-container">
+      <div class="icons">
+        <i class="fas fa-home"></i>
+        <div class="content">
+          <h3>20+</h3>
+          <p>sucursales</p>
+        </div>
       </div>
-    </div>
-    <div class="icons">
-      <i class="fas fa-car"></i>
-      <div class="content">
-        <h3>900+</h3>
-        <p>autos vendidos</p>
+      <div class="icons">
+        <i class="fas fa-car"></i>
+        <div class="content">
+          <h3>900+</h3>
+          <p>autos vendidos</p>
+        </div>
       </div>
-    </div>
-    <div class="icons">
-      <i class="fas fa-users"></i>
-      <div class="content">
-        <h3>200+</h3>
-        <p>clientes contentos</p>
+      <div class="icons">
+        <i class="fas fa-users"></i>
+        <div class="content">
+          <h3>200+</h3>
+          <p>clientes contentos</p>
+        </div>
       </div>
-    </div>
-    <div class="icons">
-      <i class="fas fa-car"></i>
-      <div class="content">
-        <h3>100+</h3>
-        <p>autos nuevos</p>
+      <div class="icons">
+        <i class="fas fa-car"></i>
+        <div class="content">
+          <h3>100+</h3>
+          <p>autos nuevos</p>
+        </div>
       </div>
-    </div>
-  </section>
-  <!--Fin de seccion de iconos-->
+    </section>
+    <!--Fin de seccion de iconos-->
 
-  <!-- newsletter section -->
-  <section class="newsletter" id="newsletter-section">
-    <h3>Subscribirse para últimas novedades</h3>
-    <p>
-      Suscríbase para recibir notificaciones acerca de promociones y nuevos
-      vehículos en ingreso
-    </p>
-    <form action="https://formsubmit.co/" id="form-api" method="POST">
-      <input type="email" name="email" placeholder="Ingresa tu email" id="" />
-      <input type="submit" name="Felicidades te haz suscripto al NewsLetter de LuxuryCars" class="subscribe"
-        id="sub-form" value="Enviar" />
-    </form>
-  </section>
-  <!-- newsletter section termina -->
-
-  <!--contact section arranca-->
-
-  <section class="contact" id="contact-section">
-    <h1 class="heading"><span>Contacta</span> con nosotros</h1>
-
-    <div class="row">
-      <iframe class="map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.8201137155534!2d-64.17979698530627!3d-31.4190819035253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a313dfac04e9%3A0x9fc5d13ac670e5e2!2sUTN%20cordoba!5e0!3m2!1sen!2sin!4v1680837710784!5m2!1sen!2sin"
-        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-      <form action="#" id="contact-form">
-        <h3>Recibir Asesoramiento</h3>
-        <input type="text" placeholder="nombre" id="name" class="box" />
-        <input type="email" placeholder="email" id="email" class="box" />
-        <input type="number" placeholder="numero" id="phone" class="box" />
-        <textarea placeholder="mensaje" class="box" cols="30" rows="10" id="message"></textarea>
-
-        <input type="submit" value="Enviar Mensaje" id="btn-submit" class="btn btn-primary" />
+    <!-- newsletter section -->
+    <section class="newsletter" id="newsletter-section">
+      <h3>Subscribirse para últimas novedades</h3>
+      <p>
+        Suscríbase para recibir notificaciones acerca de promociones y nuevos
+        vehículos en ingreso
+      </p>
+      <form action="https://formsubmit.co/" id="form-api" method="POST">
+        <input type="email" name="email" placeholder="Ingresa tu email" id="" />
+        <input
+          type="submit"
+          name="Felicidades te haz suscripto al NewsLetter de LuxuryCars"
+          class="subscribe"
+          id="sub-form"
+          value="Enviar"
+        />
       </form>
-    </div>
-  </section>
-  <!-- Modal Rating -->
+    </section>
+    <!-- newsletter section termina -->
 
-  <div class="btn-container">
-    <!-- Button to Open the Modal -->
-    <button type="button" class="btn btn-primary border-0" data-bs-toggle="modal" data-bs-target="#review-modal">
-      Valora nuestra página
-    </button>
+    <!--contact section arranca-->
 
-    <!-- The Modal -->
-    <div class="modal-container">
-      <div class="modal" id="review-modal">
-        <div class="modal-dialog modal-sm modal-dialog-centered rounded-2">
-          <div class="modal-content">
-            <!-- Modal Header -->
-            <div class="modal-header">
-              <h4 class="modal-title">LuxuryCars - Reseña</h4>
-              <button type="button" class="close" data-bs-dismiss="modal">
-                &times;
-              </button>
-            </div>
+    <section class="contact" id="contact-section">
+      <h1 class="heading"><span>Contacta</span> con nosotros</h1>
 
-            <!-- Modal body -->
-            <div class="modal-body text-center">
-              <h2 class="mt-3">¿Que te pareció nuestra página?</h2>
-              <p class="fs-3 mt-4">Dejanos tu opinion</p>
-            </div>
+      <div class="row">
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.8201137155534!2d-64.17979698530627!3d-31.4190819035253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a313dfac04e9%3A0x9fc5d13ac670e5e2!2sUTN%20cordoba!5e0!3m2!1sen!2sin!4v1680837710784!5m2!1sen!2sin"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
 
-            <!-- rate start -->
-            <div class="rating text-center">
-              <span class="star" data-value="1"></span>
-              <span class="star" data-value="2"></span>
-              <span class="star" data-value="3"></span>
-              <span class="star" data-value="4"></span>
-              <span class="star" data-value="5"></span>
-            </div>
+        <form action="#" id="contact-form">
+          <h3>Recibir Asesoramiento</h3>
+          <input type="text" placeholder="nombre" id="name" class="box" />
+          <input type="email" placeholder="email" id="email" class="box" />
+          <input type="number" placeholder="numero" id="phone" class="box" />
+          <textarea
+            placeholder="mensaje"
+            class="box"
+            cols="30"
+            rows="10"
+            id="message"
+          ></textarea>
 
-            <div class="rating-value px-3">
-              <span class="fs-1">Valoracion: </span>
-              <span id="value"></span>
-            </div>
+          <input
+            type="submit"
+            value="Enviar Mensaje"
+            id="btn-submit"
+            class="btn btn-primary"
+          />
+        </form>
+      </div>
+    </section>
+    <!-- Modal Rating -->
 
-            <!-- Modal footer -->
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary" id="rate-btn" data-bs-dismiss="modal">
-                Valorar
-              </button>
+    <div class="btn-container">
+      <!-- Button to Open the Modal -->
+      <button
+        type="button"
+        class="btn btn-primary border-0"
+        data-bs-toggle="modal"
+        data-bs-target="#review-modal"
+      >
+        Valora nuestra página
+      </button>
+
+      <!-- The Modal -->
+      <div class="modal-container">
+        <div class="modal" id="review-modal">
+          <div class="modal-dialog modal-sm modal-dialog-centered rounded-2">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">LuxuryCars - Reseña</h4>
+                <button type="button" class="close" data-bs-dismiss="modal">
+                  &times;
+                </button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body text-center">
+                <h2 class="mt-3">¿Que te pareció nuestra página?</h2>
+                <p class="fs-3 mt-4">Dejanos tu opinion</p>
+              </div>
+
+              <!-- rate start -->
+              <div class="rating text-center">
+                <span class="star" data-value="1"></span>
+                <span class="star" data-value="2"></span>
+                <span class="star" data-value="3"></span>
+                <span class="star" data-value="4"></span>
+                <span class="star" data-value="5"></span>
+              </div>
+
+              <div class="rating-value px-3">
+                <span class="fs-1">Valoracion: </span>
+                <span id="value"></span>
+              </div>
+
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  id="rate-btn"
+                  data-bs-dismiss="modal"
+                >
+                  Valorar
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- footer section arranca -->
+    <!-- footer section arranca -->
 
-  <section class="footer-links">
-    <div class="box-container">
-      <div class="box">
-        <h3>sucursales</h3>
-        <a href="https://goo.gl/maps/5ddkVGVnA4AnUDqe9" target="_blank"><i class="fas fa-map-marker-alt"></i>Córdoba</a>
-        <a href="https://goo.gl/maps/9b5gKTmKqFhoRiubA" target="_blank"><i class="fas fa-map-marker-alt"></i>Tucumán</a>
-        <a href="https://goo.gl/maps/ncvTrFpETRkFUuvx7" target="_blank"><i class="fas fa-map-marker-alt"></i>Buenos
-          Aires</a>
-        <a href="https://goo.gl/maps/5QycBs4EfXmh57uF7" target="_blank"><i class="fas fa-map-marker-alt"></i>Neuquén</a>
-        <a href="https://goo.gl/maps/nyRhhGP4ZqBVGTVk7" target="_blank"><i class="fas fa-map-marker-alt"></i>La
-          Rioja</a>
+    <section class="footer-links">
+      <div class="box-container">
+        <div class="box">
+          <h3>sucursales</h3>
+          <a href="https://goo.gl/maps/5ddkVGVnA4AnUDqe9" target="_blank"
+            ><i class="fas fa-map-marker-alt"></i>Cordoba</a
+          >
+          <a href="https://goo.gl/maps/9b5gKTmKqFhoRiubA" target="_blank"
+            ><i class="fas fa-map-marker-alt"></i>Tucuman</a
+          >
+          <a href="https://goo.gl/maps/ncvTrFpETRkFUuvx7" target="_blank"
+            ><i class="fas fa-map-marker-alt"></i>Buenos Aires</a
+          >
+          <a href="https://goo.gl/maps/5QycBs4EfXmh57uF7" target="_blank"
+            ><i class="fas fa-map-marker-alt"></i>Neuquen</a
+          >
+          <a href="https://goo.gl/maps/nyRhhGP4ZqBVGTVk7" target="_blank"
+            ><i class="fas fa-map-marker-alt"></i>La Rioja</a
+          >
+        </div>
+
+        <div class="box">
+          <h3>links rapidos</h3>
+          <a href="index.html"><i class="fas fa-arrow-right"></i>inicio</a>
+          <a href="#featured-section"
+            ><i class="fas fa-arrow-right"></i>vehiculos</a
+          >
+          <a href="servicios.html"
+            ><i class="fas fa-arrow-right"></i>servicios</a
+          >
+          <a href="team.html#reviews-section"
+            ><i class="fas fa-arrow-right"></i>equipo</a
+          >
+          <a href="index.html#contact-section"
+            ><i class="fas fa-arrow-right"></i>contacto</a
+          >
+        </div>
+
+        <div class="box">
+          <h3>Contactos</h3>
+          <a
+            href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlJVjvQDpDJNtzPNrDGWWCFHrfGzRqVjMXjRcXxXJBLThShTWfPDsSmpCMgmPLQvMhwNVq"
+            target="_blank"
+            ><i class="fas fa-envelope"></i>Grupo5@gmail.com</a
+          >
+          <a href="https://goo.gl/maps/5ddkVGVnA4AnUDqe9" target="_blank"
+            ><i class="fas fa-map-marker-alt"></i>Cordoba, ARG - CP 5000</a
+          >
+        </div>
+
+        <div class="box">
+          <h3>redes</h3>
+          <a href="https://www.facebook.com/" target="__blank"
+            ><i class="fab fa-facebook-f"></i>facebook</a
+          >
+          <a href="https://twitter.com/" target="__blank"
+            ><i class="fab fa-twitter"></i>twitter</a
+          >
+          <a href="https://www.instagram.com/" target="__blank"
+            ><i class="fab fa-instagram"></i>instagram</a
+          >
+          <a href="https://www.linkedin.com/" target="__blank"
+            ><i class="fab fa-linkedin"></i>linkedin</a
+          >
+          <a href="https://ar.pinterest.com/" target="__blank"
+            ><i class="fab fa-pinterest"></i>pinterest</a
+          >
+        </div>
       </div>
     </section>
     <footer class="footer-credit">
-      <span> create by grupo 5 </span> | <span> derechos reservados </span>
+      <span> create by grupo 5</span> | <span> derechos reservados </span>
     </footer>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
