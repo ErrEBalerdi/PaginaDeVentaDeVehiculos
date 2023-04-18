@@ -564,6 +564,122 @@ section {
 .Espacio {
   height: 100px;
 }
+/*autos modal*/
+.info-container {
+  position: fixed;
+  top: -105%;
+  left: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.info-container.active {
+  top: 0;
+  opacity: 1;
+}
+
+.info-container form {
+  height: 600PX;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  background: #fff;
+  border: var(--border);
+  width: 800PX;
+}
+.visual{
+  height: 200px;
+  width: 400px;
+}
+.info1 {
+  margin: 0.7rem 3px;
+  text-transform: none;
+  color: var(--black);
+  background-color: var(--box-color-2);
+  font-size: 1.6rem;
+  padding: 1rem 1.2rem;
+  border: var(--border);
+  border-radius: 0.5rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.info2 {
+  margin: 0.7rem 2;
+  width: 50%;
+  text-transform: none;
+  color: var(--black);
+  background-color: var(--box-color-2);
+  font-size: 1.6rem;
+  padding: 1rem 1.2rem;
+  border: var(--border);
+  border-radius: 0.5rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.modalbtn {
+ height: 43px;
+ width: 40%;
+ position: relative;
+ left: 40px;
+  display: flex;
+  margin: 0.7rem 2;
+  border-radius: 0.5rem;
+  background: var(--light-yellow);
+  color: var(--black);
+  font-weight: 500;
+  font-size: 1.6rem;
+  cursor: pointer;
+  padding: 1rem 1.2rem;
+
+}
+.info-container form .btn {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.info-container form .buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.info-container form h3 {
+  color: var(--black);
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.tImg{
+  height: 200PX;
+}
+
+.info-container form p {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.info-container #close-info-container {
+  top: 5.5rem;
+  right: 2.5rem;
+  padding-left: 95%;
+  font-size: 3rem;
+  color: var(--black);
+  cursor: pointer;
+}
+
+/*autos modal*/
 /*featured section fin riki*/
 
 /* newsletter Section Inicio */
