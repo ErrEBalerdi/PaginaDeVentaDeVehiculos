@@ -27,11 +27,17 @@ a {
   text-transform: capitalize;
   transition: all 0.2s linear;
 }
+
 body {
   padding: 0 !important;
 }
+
 html {
   font-size: 62.5%;
+}
+
+body {
+  padding: 0 !important;
 }
 
 section {
@@ -139,6 +145,11 @@ section {
 @media (max-width: 991px) {
   html {
     font-size: 55.5%;
+  }
+  .footer-links .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)) !important;
+    gap: 1.5rem;
   }
 }
 
@@ -406,7 +417,7 @@ section {
 
 .vehicles .vehicles-slider .box .content .price {
   font-size: 2.5rem;
-  color: var(--light-yellow);
+  color: var(--yellow);
   padding: 1rem 0;
   font-weight: bolder;
 }
@@ -571,13 +582,13 @@ section {
 }
 
 .info-container form {
-  height: 600PX;
+  height: 600px;
   padding: 2rem;
   border-radius: 0.5rem;
   box-shadow: var(--box-shadow);
   background: #fff;
   border: var(--border);
-  width: 800PX;
+  width: 800px;
 }
 .visual {
   height: 150px;
@@ -615,10 +626,10 @@ section {
 }
 
 .modalbtn {
- height: 43px;
- width: 40%;
- position: relative;
- left: 40px;
+  height: 43px;
+  width: 40%;
+  position: relative;
+  left: 40px;
   display: flex;
   margin: 0.7rem 2;
   border-radius: 0.5rem;
@@ -628,7 +639,6 @@ section {
   font-size: 1.6rem;
   cursor: pointer;
   padding: 1rem 1.2rem;
-
 }
 .info-container form .btn {
   display: block;
@@ -648,10 +658,10 @@ section {
   text-transform: uppercase;
 }
 
-.tImg{
+.tImg {
   position: relative;
   bottom: 30px;
-  height: 200PX;
+  height: 200px;
 }
 
 .info-container form p {
@@ -677,8 +687,6 @@ section {
 .newsletter {
   padding: 6rem 2rem;
   text-align: center;
-  background: url(../image/letter-bg.png) no-repeat;
-  background-size: cover;
 }
 
 .newsletter h3 {
@@ -818,23 +826,20 @@ section {
   color: var(--black);
 }
 
-#textareaError {
-  display: none;
-  font-size: 2rem;
-  position: absolute;
-  background-color: #dc1221;
-  padding: 0.5rem 0.7rem;
-  border-radius: 5px;
-  top: 0;
-  left: 0;
-  z-index: 10;
-}
-
 .btn-primary {
   border: none;
 }
 .btn-primary:active {
   background-color: var(--light-yellow) !important;
+}
+/* form validator */
+
+.box.error {
+  border: 2px solid red;
+}
+
+.box.valid {
+  border: 2px solid green;
 }
 
 /* modal style */
@@ -911,6 +916,7 @@ section {
   color: var(--black);
   font-size: 2.2rem;
   padding: 1rem 0;
+  text-align: center;
 }
 
 .footer-links .box-container .box a {
@@ -939,6 +945,10 @@ section {
   background-color: var(--black-footer);
   padding: 2rem;
   font-size: 1.1rem;
+}
+
+.footer-credit span {
+  margin: 0 1%;
 }
 
 .footer-credit span {
@@ -976,7 +986,7 @@ section {
   text-align: center;
   width: 40rem;
 }
-.wizard-form-container form h3 span{
+.wizard-form-container form h3 span {
   color: var(--yellow);
 }
 
@@ -1064,10 +1074,9 @@ section {
   width: 40rem;
 }
 
-.wizard-form-container2 form h3 span{
+.wizard-form-container2 form h3 span {
   color: var(--yellow);
 }
-
 
 .wizard-form-container2 form .btn {
   display: block;
@@ -1121,7 +1130,6 @@ section {
 
 /* Wizard 2*/
 
-
 /* Wizard 3*/
 
 .wizard-form-container3 {
@@ -1154,7 +1162,7 @@ section {
   width: 40rem;
 }
 
-.wizard-form-container3 form h3 span{
+.wizard-form-container3 form h3 span {
   color: var(--yellow);
 }
 
@@ -1178,7 +1186,7 @@ section {
   text-decoration: underline;
 }
 
-.wizard-form-container3 img{
+.wizard-form-container3 img {
   height: 45rem;
   width: 45rem;
 }
