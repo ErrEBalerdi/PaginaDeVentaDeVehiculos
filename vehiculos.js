@@ -225,8 +225,8 @@ function addContent(currentCar) {
       nombreVehiculo.textContent = vehiculo.nombre;
       puertas.textContent = "Puertas: " + vehiculo.puertas;
       modelo.textContent = "Modelo: " + vehiculo.modelo;
-      potencia.textContent = "Potencia:" + vehiculo.potencia;
-      motor.textContent = "Potencia:" + vehiculo.motor;
+      potencia.textContent = "Potencia: " + vehiculo.potencia;
+      motor.textContent = "Motor: " + vehiculo.motor;
       aceleracion.textContent = "Aceleracion: " +vehiculo.aceleracion;
       baul.textContent = "Baul: " + vehiculo.baul;
       asientos.textContent = "Asientos: " + vehiculo.asientos;
