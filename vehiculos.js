@@ -223,15 +223,15 @@ function addContent(currentCar) {
   for (let vehiculo of vehiculos) {
     if (currentCar == vehiculo.nombre) {
       nombreVehiculo.textContent = vehiculo.nombre;
-      puertas.textContent = vehiculo.puertas;
-      modelo.textContent = vehiculo.modelo;
-      potencia.textContent = vehiculo.potencia;
-      motor.textContent = vehiculo.motor;
-      aceleracion.textContent = vehiculo.aceleracion;
-      baul.textContent = vehiculo.baul;
-      asientos.textContent = vehiculo.asientos;
-      consumo.textContent = vehiculo.consumo;
-      precio.textContent = vehiculo.precio;
+      puertas.textContent = "Puertas: " + vehiculo.puertas;
+      modelo.textContent = "Modelo: " + vehiculo.modelo;
+      potencia.textContent = "Potencia: " + vehiculo.potencia;
+      motor.textContent = "Motor: " + vehiculo.motor;
+      aceleracion.textContent = "Aceleracion: " +vehiculo.aceleracion;
+      baul.textContent = "Baul: " + vehiculo.baul;
+      asientos.textContent = "Asientos: " + vehiculo.asientos;
+      consumo.textContent = "Consumo: " + vehiculo.consumo;
+      precio.textContent = "Precio: " + vehiculo.precio;
       fotoAuto.src = vehiculo.fotoAuto;
     }
   }
