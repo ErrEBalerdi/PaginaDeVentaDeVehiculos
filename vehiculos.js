@@ -1,3 +1,6 @@
+document.querySelector("#close-info-container").onclick = () => {
+  document.querySelector(".info-container").classList.toggle("active");
+};
 // Catalogo de Vehiculos //
 
 const vehiculos = [

@@ -67,3 +67,5 @@ submitBtn.click(function () {
   // si todas las validaicones pasan se envia el form
   contactForm.submit();
 });
+
+document.querySelector("close-info-container");
