@@ -118,7 +118,7 @@ document.querySelector("#VolkswagenGolTrend").onclick = () => {
   Potencia.textContent = "Potencia:" + " 110.";
   Motor.textContent = "Motor:" + " 1.6.";
   Aceleracion.textContent = "Aceleracion:" + " 0 a 100km/h en 10,1 segundos.";
-  Baul.textContent = "Baul:" + " 285.";
+  Baul.textContent = "Baul:" + " 285l.";
   Asientos.textContent = "Asientos:" + " 5.";
   Consumo.textContent = "Consumo:" + " 6.2 l/100km.";
   Precio.textContent = "Precio:" + " $7,500.";
@@ -133,7 +133,7 @@ document.querySelector("#ToyotaCorolla").onclick = () => {
   Potencia.textContent = "Potencia:" + " 196.";
   Motor.textContent = "Motor:" + " 2.0.";
   Aceleracion.textContent = "Aceleracion:" + " 0 a 100km/h en 7,2 segundos.";
-  Baul.textContent = "Baul:" + " 361.";
+  Baul.textContent = "Baul:" + " 361l.";
   Asientos.textContent = "Asientos:" + " 5.";
   Consumo.textContent = "Consumo:" + " 4.5 - 5.2 l/100km";
   Precio.textContent = "Precio:" + " $26,990.";
@@ -148,7 +148,7 @@ document.querySelector("#VolkswagenPassat").onclick = () => {
   Potencia.textContent = "Potencia:" + " 190.";
   Motor.textContent = "Motor:" + " 2.0.";
   Aceleracion.textContent = "Aceleracion:" + " 0 a 100km/h en 7,3 segundos.";
-  Baul.textContent = "Baul:" + " 586.";
+  Baul.textContent = "Baul:" + " 586l.";
   Asientos.textContent = "Asientos:" + " 5.";
   Consumo.textContent = "Consumo:" + " 4.7 - 6.9 l/100km";
   Precio.textContent = "Precio:" + " $35.900.";
@@ -163,7 +163,7 @@ document.querySelector("#FordEcosport").onclick = () => {
   Potencia.textContent = "Potencia:" + " 123.";
   Motor.textContent = "Motor:" + " 1.5.";
   Aceleracion.textContent = "Aceleracion:" + " 0 a 100km/h en 9,7 segundos";
-  Baul.textContent = "Baul:" + " 355.";
+  Baul.textContent = "Baul:" + " 355l.";
   Asientos.textContent = "Asientos:" + " 5.";
   Consumo.textContent = "Consumo:" + " 5.9 - 6 l/100km";
   Precio.textContent = "Precio:" + " $12,500.";
@@ -178,7 +178,7 @@ document.querySelector("#Fiat500").onclick = () => {
   Potencia.textContent = "Potencia:" + " 70.";
   Motor.textContent = "Motor:" + " 1.2.";
   Aceleracion.textContent = "Aceleracion:" + " 0 a 100 km/h en 7 segundos";
-  Baul.textContent = "Baul:" + " 185.";
+  Baul.textContent = "Baul:" + " 185l.";
   Asientos.textContent = "Asientos:" + " 4.";
   Consumo.textContent = "Consumo:" + " 4.6 - 5.4 l/100km";
   Precio.textContent = "Precio:" + " $17,000.";
@@ -193,7 +193,7 @@ document.querySelector("#ChevroletCruze").onclick = () => {
   Potencia.textContent = "Potencia:" + " 150.";
   Motor.textContent = "Motor:" + " 1.4.";
   Aceleracion.textContent = "Aceleracion:" + " 0 a 100 km/h en 8,5 segundos";
-  Baul.textContent = "Baul:" + " 440.";
+  Baul.textContent = "Baul:" + " 440l.";
   Asientos.textContent = "Asientos:" + " 5.";
   Consumo.textContent = "Consumo:" + " 5.3 - 7.3 l/100km";
   Precio.textContent = "Precio:" + " $25,000.";
@@ -208,7 +208,7 @@ document.querySelector("#FordFiesta").onclick = () => {
   Potencia.textContent = "Potencia:" + " 198.";
   Motor.textContent = "Motor:" + " 1.1.";
   Aceleracion.textContent = "Aceleracion:" + " 0 a 100km/h en 6,7 segundos";
-  Baul.textContent = "Baul:" + " 293.";
+  Baul.textContent = "Baul:" + " 293l.";
   Asientos.textContent = "Asientos:" + " 5.";
   Consumo.textContent = "Consumo:" + " 5 - 7.1 l/100km";
   Precio.textContent = "Precio:" + " $12,500.";
@@ -223,7 +223,7 @@ document.querySelector("#ToyotaCamry").onclick = () => {
   Potencia.textContent = "Potencia:" + " 218.";
   Motor.textContent = "Motor:" + " 2.5.";
   Aceleracion.textContent = "Aceleracion:" + " 0 a 100km/h en 8,3 segundos";
-  Baul.textContent = "Baul:" + " 524.";
+  Baul.textContent = "Baul:" + " 524l.";
   Asientos.textContent = "Asientos:" + " 5.";
   Consumo.textContent = "Consumo:" + " 5.3 l/100km";
   Precio.textContent = "Precio:" + " $30,000.";
@@ -238,7 +238,7 @@ document.querySelector("#VolkswagenGolfGTI").onclick = () => {
   Potencia.textContent = "Potencia:" + " 290.";
   Motor.textContent = "Motor:" + " 2.0.";
   Aceleracion.textContent = "Aceleracion:" + " 0 a 100km/h en 5,6 segundos.";
-  Baul.textContent = "Baul:" + " 350.";
+  Baul.textContent = "Baul:" + " 350l.";
   Asientos.textContent = "Asientos:" + " 6.";
   Consumo.textContent = "Consumo:" + " 8.04 l/100km.";
   Precio.textContent = "Precio:" + " $43,000.";
@@ -283,7 +283,7 @@ document.querySelector("#MercedesBenzAMGGTR").onclick = () => {
   Potencia.textContent = "Potencia:" + " 585.";
   Motor.textContent = "Motor:" + " 3982cc 8V .";
   Aceleracion.textContent = "Aceleracion:" + " 0 a 100km/h en 3,2 segundos.";
-  Baul.textContent = "Baul:" + " 175.";
+  Baul.textContent = "Baul:" + " 175l.";
   Asientos.textContent = "Asientos:" + " 2.";
   Consumo.textContent = "Consumo:" + " 15.1 l/100km.";
   Precio.textContent = "Precio:" + " $200,000.";
@@ -313,7 +313,7 @@ document.querySelector("#NissanGTRNismo").onclick = () => {
   Potencia.textContent = "Potencia:" + " 570.";
   Motor.textContent = "Motor:" + " 3.8 V6.";
   Aceleracion.textContent = "Aceleracion:" + " 0 a 100km/h en 2,8 segundos.";
-  Baul.textContent = "Baul:" + " 318.";
+  Baul.textContent = "Baul:" + " 318l.";
   Asientos.textContent = "Asientos:" + " 2.";
   Consumo.textContent = "Consumo:" + " 14.3 l/100km.";
   Precio.textContent = "Precio:" + " $117,000.";
