@@ -27,9 +27,11 @@ a {
   text-transform: capitalize;
   transition: all 0.2s linear;
 }
+
 body {
   padding: 0 !important;
 }
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -146,6 +148,11 @@ section {
 @media (max-width: 991px) {
   html {
     font-size: 55.5%;
+  }
+  .footer-links .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)) !important;
+    gap: 1.5rem;
   }
 }
 
@@ -424,7 +431,7 @@ section {
 
 .vehicles .vehicles-slider .box .content .price {
   font-size: 2.5rem;
-  color: var(--light-yellow);
+  color: var(--yellow);
   padding: 1rem 0;
   font-weight: bolder;
 }
@@ -833,18 +840,6 @@ section {
   color: var(--black);
 }
 
-#textareaError {
-  display: none;
-  font-size: 2rem;
-  position: absolute;
-  background-color: #dc1221;
-  padding: 0.5rem 0.7rem;
-  border-radius: 5px;
-  top: 0;
-  left: 0;
-  z-index: 10;
-}
-
 .btn-primary {
   border: none;
 }
@@ -935,6 +930,7 @@ section {
   color: var(--black);
   font-size: 2.2rem;
   padding: 1rem 0;
+  text-align: center;
 }
 
 .footer-links .box-container .box a {
@@ -968,7 +964,6 @@ section {
 .footer-credit span {
   margin: 0 1%;
 }
-
 
 .footer-credit span {
   margin: 0 1%;
