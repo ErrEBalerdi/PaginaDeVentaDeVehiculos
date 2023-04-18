@@ -1,17 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
 
 :root {
+<<<<<<< Updated upstream
   --light-yellow: #fefe8f;
   --yellow: #ffee80;
   --black-footer: #000000;
   --black: #130f40;
   --light-color: #666;
   --white: #fefaf9;
+=======
+  --yellow: #f9d806;
+  --light-yellow: #ffee80;
+  --black: #130f40;
+  --light-color: #666;
+>>>>>>> Stashed changes
   --border: 0.1rem solid rgba(0, 0, 0, 0.1);
   --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   --box-color-2: #e2e2da;
 }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 a {
   text-decoration: none;
 }
@@ -27,11 +37,20 @@ a {
   text-transform: capitalize;
   transition: all 0.2s linear;
 }
+<<<<<<< Updated upstream
 body {
   padding: 0 !important;
 }
 html {
   font-size: 62.5%;
+=======
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+>>>>>>> Stashed changes
 }
 
 section {
@@ -58,7 +77,11 @@ section {
   width: 100%;
   height: 100%;
   z-index: -1;
+<<<<<<< Updated upstream
   background: var(--light-yellow);
+=======
+  background: var(--yellow);
+>>>>>>> Stashed changes
   clip-path: polygon(0 90%, 100% 80%, 100% 100%, 0% 100%);
 }
 
@@ -66,7 +89,11 @@ section {
   display: inline-block;
   margin-top: 1rem;
   border-radius: 0.5rem;
+<<<<<<< Updated upstream
   background: var(--yellow);
+=======
+  background: var(--light-yellow);
+>>>>>>> Stashed changes
   color: var(--black);
   font-weight: 500;
   font-size: 1.7rem;
@@ -75,7 +102,11 @@ section {
 }
 
 .btn:hover {
+<<<<<<< Updated upstream
   background: var(--light-yellow);
+=======
+  background: var(--yellow);
+>>>>>>> Stashed changes
 }
 
 .header {
@@ -98,7 +129,11 @@ section {
 }
 
 .header .logo span {
+<<<<<<< Updated upstream
   color: var(--light-yellow);
+=======
+  color: var(--yellow);
+>>>>>>> Stashed changes
 }
 
 .header .navbar a {
@@ -108,7 +143,11 @@ section {
 }
 
 .header .navbar a:hover {
+<<<<<<< Updated upstream
   color: var(--light-yellow);
+=======
+  color: var(--yellow);
+>>>>>>> Stashed changes
 }
 
 .header .btn {
@@ -159,12 +198,20 @@ section {
   }
 }
 
+<<<<<<< Updated upstream
 @media (max-width: 782px) {
+=======
+@media (max-width: 780px) {
+>>>>>>> Stashed changes
   #menu-btn {
     font-size: 2.5rem;
     color: var(--light-color);
     cursor: pointer;
+<<<<<<< Updated upstream
     display: block;
+=======
+    display: none;
+>>>>>>> Stashed changes
   }
 
   /*Desplegar menu*/
@@ -173,17 +220,24 @@ section {
     transform: rotate(188deg);
   }
 
+<<<<<<< Updated upstream
   /* Solucion del navbar responsive */
   .navbar {
     flex-direction: column;
     display: inline;
   }
   /* Solucion del navbar responsive */
+=======
+>>>>>>> Stashed changes
   .header #login-btn i {
     font-size: 2.5rem;
     color: var(--light-color);
     cursor: pointer;
+<<<<<<< Updated upstream
     display: block;
+=======
+    display: none;
+>>>>>>> Stashed changes
   }
 
   .header #login-btn .btn {
@@ -215,7 +269,10 @@ section {
   html {
     font-size: 50%;
   }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
   .heading {
     font-size: 3rem;
   }
@@ -273,6 +330,20 @@ section {
   text-transform: uppercase;
 }
 
+<<<<<<< Updated upstream
+=======
+.login-form-container form .box {
+  margin: 0.7rem 0;
+  width: 100%;
+  text-transform: none;
+  color: var(--black);
+  font-size: 1.6rem;
+  padding: 1rem 1.2rem;
+  border: var(--border);
+  border-radius: 0.5rem;
+}
+
+>>>>>>> Stashed changes
 .login-form-container form .box2 {
   margin: 0.7rem 0;
   width: 100%;
@@ -292,16 +363,27 @@ section {
 }
 
 .login-form-container #close-login-form {
+<<<<<<< Updated upstream
   top: 5.5rem;
   right: 2.5rem;
   padding-left: 95%;
   font-size: 3rem;
+=======
+  position: absolute;
+  top: 1.5rem;
+  right: 2.5rem;
+  font-size: 5rem;
+>>>>>>> Stashed changes
   color: var(--black);
   cursor: pointer;
 }
 
 .login-form-container form p a {
+<<<<<<< Updated upstream
   color: var(--light-yellow);
+=======
+  color: var(--yellow);
+>>>>>>> Stashed changes
   text-decoration: underline;
 }
 
@@ -359,7 +441,11 @@ section {
 }
 
 .icons-container .icons .content h3 {
+<<<<<<< Updated upstream
   color: var(--light-yellow);
+=======
+  color: var(--yellow);
+>>>>>>> Stashed changes
   font-size: 2.5rem;
 }
 
@@ -367,8 +453,29 @@ section {
   color: var(--light-color);
   font-size: 1.5rem;
 }
+<<<<<<< Updated upstream
 /*Iconos*/
 
+=======
+
+.icons-container .icons:hover {
+  background: var(--black);
+}
+
+.icons-container .icons:hover i {
+  background: var(--yellow);
+}
+
+.icons-container .icons:hover .content h3 {
+  color: #fff;
+}
+
+.icons-container .icons:hover .content p {
+  color: #eee;
+}
+
+/*Iconos*/
+>>>>>>> Stashed changes
 /*Seccion de vehiculos*/
 .vehicles .vehicles-slider {
   padding-bottom: 5rem;
@@ -406,7 +513,11 @@ section {
 
 .vehicles .vehicles-slider .box .content .price {
   font-size: 2.5rem;
+<<<<<<< Updated upstream
   color: var(--light-yellow);
+=======
+  color: var(--yellow);
+>>>>>>> Stashed changes
   padding: 1rem 0;
   font-weight: bolder;
 }
@@ -426,7 +537,11 @@ section {
 }
 
 .vehicles .vehicles-slider .box .content .price p span {
+<<<<<<< Updated upstream
   color: var(--light-yellow);
+=======
+  color: var(--yellow);
+>>>>>>> Stashed changes
   font-size: 0.8rem;
   padding: 0 0.5rem;
 }
@@ -438,6 +553,7 @@ section {
 /*Seccion de vehiculos*/
 
 /*services section inicio riki*/
+<<<<<<< Updated upstream
 .container {
   text-align: center;
   padding: 2rem;
@@ -449,14 +565,24 @@ section {
 .services .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+=======
+
+.services .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+>>>>>>> Stashed changes
   gap: 1.5rem;
 }
 
 .services .box-container .box {
   text-align: center;
   padding: 2rem;
+<<<<<<< Updated upstream
   border-radius: 0.5rem;
   box-shadow: vard(--box-shadow);
+=======
+  border-radius: vard(--box-shadow);
+>>>>>>> Stashed changes
   border: var(--border);
 }
 
@@ -466,7 +592,11 @@ section {
   line-height: 6rem;
   font-size: 2.5rem;
   color: var(--black);
+<<<<<<< Updated upstream
   background: var(--light-yellow);
+=======
+  background: var(--yellow);
+>>>>>>> Stashed changes
   border-radius: 50%;
   margin-bottom: 1rem;
 }
@@ -483,6 +613,7 @@ section {
   line-height: 1.8;
 }
 
+<<<<<<< Updated upstream
 .services .box-container .boxVentas:hover h3 {
   color: #fff;
 }
@@ -493,6 +624,19 @@ section {
 .boxVentas:hover {
   background: var(--black);
 }
+=======
+.services .box-container .box:hover {
+  background: var(--black);
+}
+
+.services .box-container .box:hover h3 {
+  color: #fff;
+}
+
+.services .box-container .box:hover p {
+  color: #eee;
+}
+>>>>>>> Stashed changes
 /*services section fin*/
 
 /*featured section inicio*/
@@ -507,6 +651,7 @@ section {
   box-shadow: var(--box-shadow);
   border: var(--border);
   border-radius: 0.5rem;
+<<<<<<< Updated upstream
   display: flex;
   flex-direction: column;
   width: 50rem;
@@ -517,6 +662,12 @@ section {
   width: 100%;
   padding: 2rem;
   min-height: 272px;
+=======
+}
+.featured .featured-slider .box img {
+  width: 100%;
+  padding: 2rem;
+>>>>>>> Stashed changes
 }
 
 .featured .featured-slider .box:hover img {
@@ -534,13 +685,18 @@ section {
 
 .featured .featured-slider .box .stars i {
   font-size: 1.7rem;
+<<<<<<< Updated upstream
   color: var(--light-yellow);
+=======
+  color: var(--yellow);
+>>>>>>> Stashed changes
 }
 
 .featured .featured-slider .box .price {
   font-size: 2.5rem;
   color: var(--black);
 }
+<<<<<<< Updated upstream
 
 #checkBtn {
   display: flex;
@@ -670,6 +826,8 @@ section {
 }
 
 /*autos modal*/
+=======
+>>>>>>> Stashed changes
 /*featured section fin riki*/
 
 /* newsletter Section Inicio */
@@ -716,12 +874,20 @@ section {
   width: 100%;
   font-size: 1.6rem;
   color: var(--black);
+<<<<<<< Updated upstream
   background: var(--yellow);
+=======
+  background: var(--light-yellow);
+>>>>>>> Stashed changes
   cursor: pointer;
 }
 
 .newsletter form input[type="submit"]:hover {
+<<<<<<< Updated upstream
   background: var(--light-yellow);
+=======
+  background: var(--yellow);
+>>>>>>> Stashed changes
 }
 
 /* Newsletter section fin */
@@ -735,6 +901,11 @@ section {
   padding: 2rem;
   margin: 2rem 0;
   text-align: center;
+<<<<<<< Updated upstream
+=======
+  /* opacity: 0.4;
+  transform: scale(0.9); */
+>>>>>>> Stashed changes
 }
 
 .reviews .reviews-slider .box img {
@@ -744,10 +915,13 @@ section {
   margin-bottom: 1rem;
 }
 
+<<<<<<< Updated upstream
 .reviews .reviews-slider .box:hover {
   transform: scale(1.05);
 }
 
+=======
+>>>>>>> Stashed changes
 .reviews .reviews-slider .box .content p {
   font-size: 1.4rem;
   color: var(--light-color);
@@ -761,7 +935,11 @@ section {
 
 .reviews .reviews-slider .box .content .stars i {
   font-size: 1.7rem;
+<<<<<<< Updated upstream
   color: var(--light-yellow);
+=======
+  color: var(--yellow);
+>>>>>>> Stashed changes
 }
 
 /*Review Section Fin */
@@ -782,7 +960,10 @@ section {
   border-radius: 0.5rem;
   box-shadow: var(--box-shadow);
 }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 .contact .row form {
   flex: 1 1 42rem;
   padding: 2rem;
@@ -811,6 +992,7 @@ section {
 .contact .row form textarea {
   height: 15rem;
   resize: none;
+<<<<<<< Updated upstream
   position: relative;
 }
 
@@ -893,38 +1075,60 @@ section {
   font-weight: bold;
   font-size: 18px;
   margin-left: 5px;
+=======
+>>>>>>> Stashed changes
 }
 
 /* style-footer */
 
+<<<<<<< Updated upstream
 .footer-links {
   background: var(--yellow);
 }
 
 .footer-links .box-container {
+=======
+.footer {
+  background: var(--light-yellow);
+}
+.footer .box-container {
+>>>>>>> Stashed changes
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 1.5rem;
 }
 
+<<<<<<< Updated upstream
 .footer-links .box-container .box h3 {
+=======
+.footer .box-container .box h3 {
+>>>>>>> Stashed changes
   color: var(--black);
   font-size: 2.2rem;
   padding: 1rem 0;
 }
 
+<<<<<<< Updated upstream
 .footer-links .box-container .box a {
+=======
+.footer .box-container .box a {
+>>>>>>> Stashed changes
   color: var(--light-color);
   font-size: 1.4rem;
   display: block;
   padding: 1rem 0;
 }
 
+<<<<<<< Updated upstream
 .footer-links .box-container .box a i {
+=======
+.footer .box-container .box a i {
+>>>>>>> Stashed changes
   padding-right: 0.5rem;
   color: var(--black);
 }
 
+<<<<<<< Updated upstream
 .footer-links .box-container .box a:hover i {
   padding-right: 2rem;
 }
@@ -1184,3 +1388,17 @@ section {
 }
 
 /* Wizard 3*/
+=======
+.footer .box-container .box a:hover i {
+  padding-right: 2rem;
+}
+
+.footer .credit {
+  text-align: center;
+  border-top: var(--border);
+  padding: 1rem;
+  padding-top: 2.5rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+>>>>>>> Stashed changes
