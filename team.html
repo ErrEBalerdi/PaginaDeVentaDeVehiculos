@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyecto Final</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!--Inicio del header-->
+  <header class="header">
+    <div id="menu-btn" class="fas fa-bars"></div>
+    <a href="index.html" class="logo"> <span>luxury</span>Cars</a>
+
+    <nav class="navbar">
+      <a href="index.html">inicio</a>
+      <a href="vehiculos-destacados.html">vehículos</a>
+      <a href="servicios.html">servicios</a>
+      <a id="wizard-btn" href="#">reseña</a>
+      <a href="#reviews-section">equipo</a>
+      <a href="index.html#contact-section">contacto</a>
+    </nav>
+
+    <div id="login-btn">
+      <button class="btn">Cuenta</button>
+      <i class="far fa-user"></i>
+    </div>
+  </header>
+
+  <!--fin del header-->
+
+  <!--Inicio del login-->
+  <div class="login-form-container">
+    <form action="">
+      <span class="fas fa-times" id="close-login-form"></span>
+      <h3>cliente</h3>
+      <img src="https://i.gyazo.com/42a8d886d8dd8a9dc89864494f1a107f.png" alt="icono" />
+      <p class="box2">Email: uncorreo@gmail.com</p>
+      <p class="box2">Cliente: Pablo Heredia</p>
+      <p class="box2">Fecha de creación: 16/04/23</p>
+      <p class="box2">Fecha de nacimiento 14/06/00</p>
+      <p class="box2">Nacionalidad: Argentina</p>
+      <p class="box2">Sexo: Masculino</p>
+    </form>
+  </div>
+  <!--Fin del login-->
+
+  <!-- Wizard -->
+
+  <div class="wizard-form-container">
+    <form action="" id="">
+      <span class="fas fa-times" id="close-wizard-form"></span>
+      <h3><Span>Luxury</Span>Cars</h3>
+      <span>ningun campo obligatorio</span>
+      <div class="box2">
+        <p>Que destacarías de la página?</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+          <label class="form-check-label text-center" for="flexCheckIndeterminate">
+            Diseño
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+          <label class="form-check-label text-center" for="flexCheckIndeterminate">
+            Simplicidad
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+          <label class="form-check-label text-center" for="flexCheckIndeterminate">
+            Utilidad de secciones
+          </label>
+        </div>
+      </div>
+      <div class="box2">
+        <p>Como podríamos mejorar?</p>
+        <input type="text">
+      </div>
+      <div class="box2">
+        <p>Que marcas te gustaría ver en la página?</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+          <label class="form-check-label text-center" for="flexCheckIndeterminate">
+            Mazda
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+          <label class="form-check-label text-center" for="flexCheckIndeterminate">
+            Lexus
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+          <label class="form-check-label text-center" for="flexCheckIndeterminate">
+            Ferrari
+          </label>
+        </div>
+      </div>
+      <div id="wizard-btn2">
+        <button class="btn">Siguiente</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="wizard-form-container2">
+    <form action="">
+      <span class="fas fa-times" id="close-wizard-form2"></span>
+      <h3><Span>Luxury</Span>Cars</h3>
+      <span>ningun campo obligatorio</span>
+      <div class="box2">
+        <p>Que te gustaría incluir en la página?</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+          <label class="form-check-label text-center" for="flexCheckIndeterminate">
+            Videos
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+          <label class="form-check-label text-center" for="flexCheckIndeterminate">
+            Información de vehículos
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+          <label class="form-check-label text-center" for="flexCheckIndeterminate">
+            Simulación de compra
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+          <label class="form-check-label text-center" for="flexCheckIndeterminate">
+            Asistencia virtual
+          </label>
+        </div>
+      </div>
+      <div class="box2">
+        <p>Pudiste ver alguna deficiencia en la página?</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+          <label class="form-check-label text-center" for="flexCheckIndeterminate">
+            Seguridad
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+          <label class="form-check-label text-center" for="flexCheckIndeterminate">
+            Mala elección de colores
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+          <label class="form-check-label text-center" for="flexCheckIndeterminate">
+            Mala atención
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+          <label class="form-check-label text-center" for="flexCheckIndeterminate">
+            Asistencia virtual
+          </label>
+        </div>
+      </div>
+
+      <div id="wizard-btn">
+        <button class="btn" id="back">Volver</button>
+      </div>
+      <div id="wizard-btn3">
+        <button class="btn" id="terminar">Terminar</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="wizard-form-container3">
+    <form action="">
+      <span class="fas fa-times" id="close-wizard-form3"></span>
+      <h3>Ya fue enviado</h3>
+      <img src="https://i.gyazo.com/4c1de576851c428a8903ccddaac7b5ed.png" alt="icono" />
+    </form>
+  </div>
+  <!-- Wizard -->
+
+  <section class="reviews" id="reviews-section">
+    <h1 class="heading"><span>Equipo</span> de desarrollo</h1>
+    <div class="reviews-slider">
+      <div class="wrapper">
+        <div class="box">
+          <img
+            src="https://scontent.fepa7-1.fna.fbcdn.net/v/t39.30808-6/310445391_2125425747636856_6804227565863937400_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=GEMuK4lmXi0AX8fKERq&_nc_oc=AQnJoI1-AaWMY0ykSAKuAwH-HPfeneNjJOzTEfJHe8l8nG7HTVuRKZ6UDXnBTYX0s1s&_nc_ht=scontent.fepa7-1.fna&oh=00_AfD5R4M9RX2CublSELz4_KYAOppwa5r0I3RpL9R7KuUAxA&oe=643A3458"
+            alt="arnold" />
+          <div class="content">
+            <h3>Tomas Alejandro Quispe</h3>
+            <p>
+              Barra de navegación, sección de cuenta, reseña, diseño responsive, <br>implementación de api
+              FontAwesome y Swiperjs
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="https://i.gyazo.com/e4e026a8fa2f7e222f55dc2da4d4ef58.jpg" alt="" />
+          <div class="content">
+            <h3>Ricardo Balerdi</h3>
+            <p>Sección de servicios y vehículos destacados</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="https://i.gyazo.com/d73da57ca2983731720d9ebf3d5f53cd.jpg" alt="" />
+          <div class="content">
+            <h3>Sebastián Elgue</h3>
+            <p>Sección de vehículos populares y galería con swiperjs.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="https://lh3.googleusercontent.com/a/AGNmyxYMWvzyH_tn201FMAysZmTIKHqaMv_1FuD4ugRQXA=s96-c-rg-br100"
+            alt="" />
+          <div class="content">
+            <h3>Nella R. Agustin Porras</h3>
+            <p>
+              Sección de Novedades, Equipo de Desarollo, API formsubmit y
+              funcion js para darle versatilidad.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="https://i.gyazo.com/dbda1141298cd3b774aa3f8a4585d00d.jpg" alt="" />
+          <div class="content">
+            <h3>Lautaro Garcia Gimenez</h3>
+            <p>
+              Sección de contacto y footer.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="https://i.gyazo.com/d9cd4826154a45b8f280c258ac6a6db3.jpg" alt="" />
+        <div class="content">
+          <h3>Alexis Guarnieri</h3>
+          <p>
+            Seccion
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- footer section arranca -->
+
+  <section class="footer-links">
+    <div class="box-container">
+      <div class="box">
+        <h3>sucursales</h3>
+        <a href="https://goo.gl/maps/5ddkVGVnA4AnUDqe9" target="_blank"><i class="fas fa-map-marker-alt"></i>Córdoba</a>
+        <a href="https://goo.gl/maps/9b5gKTmKqFhoRiubA" target="_blank"><i class="fas fa-map-marker-alt"></i>Tucumán</a>
+        <a href="https://goo.gl/maps/ncvTrFpETRkFUuvx7" target="_blank"><i class="fas fa-map-marker-alt"></i>Buenos
+          Aires</a>
+        <a href="https://goo.gl/maps/5QycBs4EfXmh57uF7" target="_blank"><i class="fas fa-map-marker-alt"></i>Neuquén</a>
+        <a href="https://goo.gl/maps/nyRhhGP4ZqBVGTVk7" target="_blank"><i class="fas fa-map-marker-alt"></i>La
+          Rioja</a>
+      </div>
+
+      <div class="box">
+        <h3>links rapidos</h3>
+        <a href="index.html"><i class="fas fa-arrow-right"></i>inicio</a>
+        <a href="vehiculos-destacados.html"><i class="fas fa-arrow-right"></i>vehículos</a>
+        <a href="team.html"><i class="fas fa-arrow-right"></i>servicios</a>
+        <a href="#reviews-section"><i class="fas fa-arrow-right"></i>equipo</a>
+        <a href="index.html#contact-section"><i class="fas fa-arrow-right"></i>contacto</a>
+      </div>
+
+      <div class="box">
+        <h3>Contactos</h3>
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlJVjvQDpDJNtzPNrDGWWCFHrfGzRqVjMXjRcXxXJBLThShTWfPDsSmpCMgmPLQvMhwNVq"
+          target="_blank"><i class="fas fa-envelope"></i>Grupo5@gmail.com</a>
+        <a href="https://goo.gl/maps/5ddkVGVnA4AnUDqe9" target="_blank"><i class="fas fa-map-marker-alt"></i>Córdoba, ARG - CP 5000</a>
+      </div>
+
+      <div class="box">
+        <h3>redes</h3>
+        <a href="https://www.facebook.com/" target="__blank"><i class="fab fa-facebook-f"></i>facebook</a>
+        <a href="https://twitter.com/" target="__blank"><i class="fab fa-twitter"></i>twitter</a>
+        <a href="https://www.instagram.com/" target="__blank"><i class="fab fa-instagram"></i>instagram</a>
+        <a href="https://www.linkedin.com/" target="__blank"><i class="fab fa-linkedin"></i>linkedin</a>
+        <a href="https://ar.pinterest.com/" target="__blank"><i class="fab fa-pinterest"></i>pinterest</a>
+      </div>
+    </div>
+
+  </section>
+  <footer class="footer-credit">
+    <span> create by grupo 5 </span> | <span> derechos reservados </span>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
