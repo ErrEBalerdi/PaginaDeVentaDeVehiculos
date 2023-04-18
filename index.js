@@ -117,7 +117,7 @@ document.querySelector("#VolkswagenGolTrend").onclick = () => {
   Modelo.textContent = "Modelo:" + " 2022.";
   Potencia.textContent = "Potencia:" + " 110 CV.";
   Motor.textContent = "Motor:" + " 1.6.";
-  Aceleracion.textContent = "Aceleracion:" + " 0 a 100km/h en 10,1 segundos.";
+  Aceleracion.textContent = "Aceleración:" + " 0 a 100km/h en 10,1 segundos.";
   Baul.textContent = "Baul:" + " 285l.";
   Asientos.textContent = "Asientos:" + " 5.";
   Consumo.textContent = "Consumo:" + " 6.2 l/100km.";
@@ -132,7 +132,7 @@ document.querySelector("#ToyotaCorolla").onclick = () => {
   Modelo.textContent = "Modelo:" + " 2023.";
   Potencia.textContent = "Potencia:" + " 196 CV.";
   Motor.textContent = "Motor:" + " 2.0.";
-  Aceleracion.textContent = "Aceleracion:" + " 0 a 100km/h en 7,2 segundos.";
+  Aceleracion.textContent = "Aceleración:" + " 0 a 100km/h en 7,2 segundos.";
   Baul.textContent = "Baul:" + " 361l.";
   Asientos.textContent = "Asientos:" + " 5.";
   Consumo.textContent = "Consumo:" + " 4.5 - 5.2 l/100km";
@@ -147,7 +147,7 @@ document.querySelector("#VolkswagenPassat").onclick = () => {
   Modelo.textContent = "Modelo:" + " 2023.";
   Potencia.textContent = "Potencia:" + " 190 CV.";
   Motor.textContent = "Motor:" + " 2.0.";
-  Aceleracion.textContent = "Aceleracion:" + " 0 a 100km/h en 7,3 segundos.";
+  Aceleracion.textContent = "Aceleración:" + " 0 a 100km/h en 7,3 segundos.";
   Baul.textContent = "Baul:" + " 586l.";
   Asientos.textContent = "Asientos:" + " 5.";
   Consumo.textContent = "Consumo:" + " 4.7 - 6.9 l/100km";
@@ -162,7 +162,7 @@ document.querySelector("#FordEcosport").onclick = () => {
   Modelo.textContent = "Modelo:" + " 2023.";
   Potencia.textContent = "Potencia:" + " 123 CV.";
   Motor.textContent = "Motor:" + " 1.5.";
-  Aceleracion.textContent = "Aceleracion:" + " 0 a 100km/h en 9,7 segundos";
+  Aceleracion.textContent = "Aceleración:" + " 0 a 100km/h en 9,7 segundos";
   Baul.textContent = "Baul:" + " 355l.";
   Asientos.textContent = "Asientos:" + " 5.";
   Consumo.textContent = "Consumo:" + " 5.9 - 6 l/100km";
@@ -177,7 +177,7 @@ document.querySelector("#Fiat500").onclick = () => {
   Modelo.textContent = "Modelo:" + " 2023.";
   Potencia.textContent = "Potencia:" + " 70 CV.";
   Motor.textContent = "Motor:" + " 1.2.";
-  Aceleracion.textContent = "Aceleracion:" + " 0 a 100 km/h en 7 segundos";
+  Aceleracion.textContent = "Aceleración:" + " 0 a 100 km/h en 7 segundos";
   Baul.textContent = "Baul:" + " 185l.";
   Asientos.textContent = "Asientos:" + " 4.";
   Consumo.textContent = "Consumo:" + " 4.6 - 5.4 l/100km";
@@ -192,7 +192,7 @@ document.querySelector("#ChevroletCruze").onclick = () => {
   Modelo.textContent = "Modelo:" + " 2023.";
   Potencia.textContent = "Potencia:" + " 150 CV.";
   Motor.textContent = "Motor:" + " 1.4.";
-  Aceleracion.textContent = "Aceleracion:" + " 0 a 100 km/h en 8,5 segundos";
+  Aceleracion.textContent = "Aceleración:" + " 0 a 100 km/h en 8,5 segundos";
   Baul.textContent = "Baul:" + " 440l.";
   Asientos.textContent = "Asientos:" + " 5.";
   Consumo.textContent = "Consumo:" + " 5.3 - 7.3 l/100km";
@@ -207,7 +207,7 @@ document.querySelector("#FordFiesta").onclick = () => {
   Modelo.textContent = "Modelo:" + " 2023.";
   Potencia.textContent = "Potencia:" + " 198 CV.";
   Motor.textContent = "Motor:" + " 1.1.";
-  Aceleracion.textContent = "Aceleracion:" + " 0 a 100km/h en 6,7 segundos";
+  Aceleracion.textContent = "Aceleración:" + " 0 a 100km/h en 6,7 segundos";
   Baul.textContent = "Baul:" + " 293l.";
   Asientos.textContent = "Asientos:" + " 5.";
   Consumo.textContent = "Consumo:" + " 5 - 7.1 l/100km";
@@ -222,7 +222,7 @@ document.querySelector("#ToyotaCamry").onclick = () => {
   Modelo.textContent = "Modelo:" + " 2023.";
   Potencia.textContent = "Potencia:" + " 218 CV.";
   Motor.textContent = "Motor:" + " 2.5.";
-  Aceleracion.textContent = "Aceleracion:" + " 0 a 100km/h en 8,3 segundos";
+  Aceleracion.textContent = "Aceleración:" + " 0 a 100km/h en 8,3 segundos";
   Baul.textContent = "Baul:" + " 524l.";
   Asientos.textContent = "Asientos:" + " 5.";
   Consumo.textContent = "Consumo:" + " 5.3 l/100km";
@@ -237,7 +237,7 @@ document.querySelector("#VolkswagenGolfGTI").onclick = () => {
   Modelo.textContent = "Modelo:" + " 2022.";
   Potencia.textContent = "Potencia:" + " 290 CV.";
   Motor.textContent = "Motor:" + " 2.0.";
-  Aceleracion.textContent = "Aceleracion:" + " 0 a 100km/h en 5,6 segundos.";
+  Aceleracion.textContent = "Aceleración:" + " 0 a 100km/h en 5,6 segundos.";
   Baul.textContent = "Baul:" + " 350l.";
   Asientos.textContent = "Asientos:" + " 6.";
   Consumo.textContent = "Consumo:" + " 8.04 l/100km.";
@@ -252,7 +252,7 @@ document.querySelector("#FordRaptor").onclick = () => {
   Modelo.textContent = "Modelo:" + " 2023.";
   Potencia.textContent = "Potencia:" + " 456 CV.";
   Motor.textContent = "Motor:" + " 3.5 v6.";
-  Aceleracion.textContent = "Aceleracion:" + " 0 a 100km/h en 7,9 segundos.";
+  Aceleracion.textContent = "Aceleración:" + " 0 a 100km/h en 7,9 segundos.";
   Baul.textContent = "pick up:" + " 758kg.";
   Asientos.textContent = "Asientos:" + " 5.";
   Consumo.textContent = "Consumo:" + " 23.4 l/100km.";
@@ -267,7 +267,7 @@ document.querySelector("#DodgeRam").onclick = () => {
   Modelo.textContent = "Modelo:" + " 2023.";
   Potencia.textContent = "Potencia:" + " 395 CV.";
   Motor.textContent = "Motor:" + " 5.7L V8.";
-  Aceleracion.textContent = "Aceleracion:" + " 0 a 100km/h en 4,5 segundos.";
+  Aceleracion.textContent = "Aceleración:" + " 0 a 100km/h en 4,5 segundos.";
   Baul.textContent = "pick up:" + " 1,860 lbs.";
   Asientos.textContent = "Asientos:" + " 5.";
   Consumo.textContent = "Consumo:" + " 11 l/100km.";
@@ -282,7 +282,7 @@ document.querySelector("#MercedesBenzAMGGTR").onclick = () => {
   Modelo.textContent = "Modelo:" + " 2023.";
   Potencia.textContent = "Potencia:" + " 585 CV.";
   Motor.textContent = "Motor:" + " 3982cc 8V .";
-  Aceleracion.textContent = "Aceleracion:" + " 0 a 100km/h en 3,2 segundos.";
+  Aceleracion.textContent = "Aceleración:" + " 0 a 100km/h en 3,2 segundos.";
   Baul.textContent = "Baul:" + " 175l.";
   Asientos.textContent = "Asientos:" + " 2.";
   Consumo.textContent = "Consumo:" + " 15.1 l/100km.";
@@ -297,7 +297,7 @@ document.querySelector("#BugattiChiron").onclick = () => {
   Modelo.textContent = "Modelo:" + " 2023.";
   Potencia.textContent = "Potencia:" + " 1600 CV.";
   Motor.textContent = "Motor:" + " W16";
-  Aceleracion.textContent = "Aceleracion:" + " 0 a 100km/h en  2,5 segundos.";
+  Aceleracion.textContent = "Aceleración:" + " 0 a 100km/h en  2,5 segundos.";
   Baul.textContent = "Baul:" + " 0.";
   Asientos.textContent = "Asientos:" + " 2.";
   Consumo.textContent = "Consumo:" + " 25.19 l/100km.";
@@ -312,7 +312,7 @@ document.querySelector("#NissanGTRNismo").onclick = () => {
   Modelo.textContent = "Modelo:" + " 2022.";
   Potencia.textContent = "Potencia:" + " 570 CV.";
   Motor.textContent = "Motor:" + " 3.8 V6.";
-  Aceleracion.textContent = "Aceleracion:" + " 0 a 100km/h en 2,8 segundos.";
+  Aceleracion.textContent = "Aceleración:" + " 0 a 100km/h en 2,8 segundos.";
   Baul.textContent = "Baul:" + " 318l.";
   Asientos.textContent = "Asientos:" + " 2.";
   Consumo.textContent = "Consumo:" + " 14.3 l/100km.";
