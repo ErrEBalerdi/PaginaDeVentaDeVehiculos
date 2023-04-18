@@ -478,39 +478,52 @@ const vehiculos = [
   },
 ];
 
-function validateForm() {
-  const name = document.getElementById("name");
-  const email = document.getElementById("email");
-  const phone = document.getElementById("phone");
+// form validator
+const form = $("#contact-form");
+const nameInput = $("#name");
+const emailInput = $("#email");
+const phoneInput = $("#phone");
+const messageInput = $("#message");
+const submitBtn = $("#btn-submit");
 
-  const nameRegex = /^[a-z ,.'-]+$/i;
-  const emailRegex =
-    /^[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*@[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*$/;
-  const phoneRegex = /^\d{10}$/;
+// previene al form de hacer enviar el formulario
+$("#contact-form").submit(function (event) {
+  // prevent the default form submission
+  event.preventDefault();
+});
 
-  if (!nameRegex.test(name.value)) {
-    name.classList.add("error");
-    name.classList.remove("valid");
+submitBtn.click(function () {
+  const nameValue = nameInput.val();
+  const emailValue = emailInput.val();
+  const phoneValue = phoneInput.val();
+  const messageValue = messageInput.val();
+
+  if (!nameValue.match(/^[a-zA-ZáéíóúñÑÁÉÍÓÚ]{5,}$/)) {
+    nameInput.css("outline", "1px solid red");
+    nameInput.focus();
+  } else nameInput.css("outline", "1px solid green");
+
+  if (
+    !emailValue.match(
+      /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/
+    )
+  ) {
+    emailInput.css("outline", "1px solid red");
+    emailInput.focus();
+  } else emailInput.css("outline", "1px solid green");
+
+  if (phoneValue == "" && !phoneValue.match(/^\d{7,14}$/)) {
+    phoneInput.css("outline", "1px solid red");
+    phoneInput.focus();
+  } else phoneInput.css("outline", "1px solid green");
+
+  if (messageValue.length < 8) {
+    messageInput.css("outline", "1px solid red");
+    messageInput.focus();
   } else {
-    name.classList.add("valid");
-    name.classList.remove("error");
+    messageInput.css("outline", "1px solid green");
   }
 
-  if (!emailRegex.test(email.value)) {
-    email.classList.add("error");
-    email.classList.remove("valid");
-  } else {
-    email.classList.add("valid");
-    email.classList.remove("error");
-  }
-
-  if (!phoneRegex.test(phone.value)) {
-    phone.classList.add("error");
-    phone.classList.remove("valid");
-  } else {
-    phone.classList.add("valid");
-    phone.classList.remove("error");
-  }
-
-  return !document.querySelectorAll(".error").length;
-}
+  // si todas las validaicones pasan se envia el form
+  form.submit();
+});
